@@ -50,6 +50,7 @@ export default function About() {
 
             <div className={styles.elsewhere}>
               <p>If you want to read more of my writing, you can find me on <a href="https://leahfarmer.substack.com" target="_blank" rel="noopener">Substack</a>. I also host <a href="https://open.spotify.com/show/5E8h0h6ksFjHrIgSujT6oK" target="_blank" rel="noopener">One Question</a> — a weekly podcast where I ask one question to one interesting person. You can connect with me on <a href="https://instagram.com/leahfarmercoaching" target="_blank" rel="noopener">Instagram</a> too.</p>
+              <p>I also built <a href="https://needapeptalk.com" target="_blank" rel="noopener">Need a Pep Talk</a> — a free tool that writes you something honest and warm when you're having one of those days. Because sometimes that's exactly what's needed.</p>
             </div>
 
           </div>
