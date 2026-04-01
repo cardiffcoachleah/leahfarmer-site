@@ -46,7 +46,7 @@ export default function About() {
             <div className={styles.divider} />
 
             <div className={styles.elsewhere}>
-              <p>If you want to read more of my writing, you can find me on <a href="https://leahfarmer.substack.com" target="_blank" rel="noopener">Substack</a>. I also host <a href="https://leahfarmer.com/onequestion" target="_blank" rel="noopener">One Question</a> — a weekly podcast where I ask one question to one interesting person. You can connect with me on <a href="https://instagram.com/leahfarmercoaching" target="_blank" rel="noopener">Instagram</a> too.</p>
+              <p>If you want to read more of my writing, you can find me on <a href="https://leahfarmer.substack.com" target="_blank" rel="noopener">Substack</a>. I also host <a href="https://open.spotify.com/show/5E8h0h6ksFjHrIgSujT6oK" target="_blank" rel="noopener">One Question</a> — a weekly podcast where I ask one question to one interesting person. You can connect with me on <a href="https://instagram.com/leahfarmercoaching" target="_blank" rel="noopener">Instagram</a> too.</p>
             </div>
 
           </div>

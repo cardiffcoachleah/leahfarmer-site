@@ -19,7 +19,7 @@ export default function Footer() {
             <a href="https://linkedin.com/in/leahfarmer" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://instagram.com/leahfarmercoaching" target="_blank" rel="noopener">Instagram</a>
             <a href="https://leahfarmer.substack.com" target="_blank" rel="noopener">Substack</a>
-            <a href="https://leahfarmer.com/onequestion" target="_blank" rel="noopener">One Question Podcast</a>
+            <a href="https://open.spotify.com/show/5E8h0h6ksFjHrIgSujT6oK" target="_blank" rel="noopener">One Question Podcast</a>
           </div>
         </div>
       </div>
