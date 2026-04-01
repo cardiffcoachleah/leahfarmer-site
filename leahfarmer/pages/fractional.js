@@ -14,7 +14,6 @@ export default function Fractional() {
 
       <main className={styles.main}>
 
-        {/* HERO */}
         <section className={styles.pageHero}>
           <div className={styles.pageHeroInner}>
             <p className={styles.eyebrow}>Fractional & Advisory</p>
@@ -22,7 +21,6 @@ export default function Fractional() {
           </div>
         </section>
 
-        {/* OPENING */}
         <section className={styles.section}>
           <div className={styles.prose}>
             <p>VCs are good at technical due diligence. They'll tell you if the architecture is sound, if the team can ship, if the code is a mess. What they rarely do well is product due diligence — whether the thing being built is the right thing, whether the roadmap reflects real customer understanding, whether the product leader knows the difference between a strategy and a list of features.</p>
@@ -32,33 +30,42 @@ export default function Fractional() {
           </div>
         </section>
 
-        {/* THREE SERVICES — side by side pillars */}
         <section className={styles.section}>
-          <div className={styles.sectionInner}>
+          <div className={styles.pillarsWrap}>
             <div className={styles.pillars}>
 
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Fractional Leadership</h2>
-                <p>Some companies need a senior product and technology leader but aren't ready — or don't need — a full-time hire. I come in as your CPO, CPTO, or VP Product. One day a week, two days, three — whatever the company needs. I work alongside your founders and leadership team to build strategy, grow your product function, and get your builders moving in the right direction.</p>
+                <p>Some companies need a senior product and technology leader but aren't ready — or don't need — a full-time hire. I come in as your CPO, CPTO, or VP Product. One day a week, two days, three — whatever the company needs.</p>
+                <p>I work alongside your founders and leadership team to build strategy, define roadmap direction, grow your product function, and get your builders aligned and moving. I bring 25 years of operator experience — not theory.</p>
                 <p className={styles.serviceNote}>Currently serving as fractional CPTO at a travel startup. Open to one additional engagement.</p>
               </div>
 
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Product Advisory</h2>
-                <p>For VCs, PEs, and founders: technical due diligence tells you if the architecture is sound. Product due diligence tells you if the company is building the right thing — and that question doesn't get asked nearly enough. While your CTO advisor is looking at the code and the infrastructure, I'm looking at the roadmap, the customer understanding, the product strategy, and whether the person leading it actually knows what they're doing.</p>
+                <p>For VCs, PEs, and founders: technical due diligence tells you if the architecture is sound. Product due diligence tells you if the company is building the right thing — and that question doesn't get asked nearly enough.</p>
+                <p>While your CTO advisor is looking at the code and the infrastructure, I'm looking at the roadmap, the customer understanding, the product strategy, and whether the person leading it actually knows what they're doing.</p>
                 <p>It's not a replacement for technical due diligence. It's what sits alongside it.</p>
               </div>
 
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Team Interventions</h2>
-                <p>Sometimes a team is stuck. Communication has broken down, burnout is spreading, or nobody can agree on how to work together. I come in, diagnose what's actually going on, and help fix it. This might be a working genius mapping session, a burnout workshop, a communication reset — whatever the situation calls for.</p>
+                <p>Sometimes a team is stuck. Communication has broken down, burnout is spreading, or nobody can agree on how to work together. Because I've both led teams and coached the people on them, I can diagnose what's actually going on — and help fix it.</p>
+                <p>These engagements are customised to what the team needs. They might be a single workshop, a series of sessions, or a combination of team work and individual coaching. Things I work on:</p>
+                <ul className={styles.pillarList}>
+                  <li>Burnout recognition and recovery</li>
+                  <li>Working Genius team mapping</li>
+                  <li>Communication and conflict reset</li>
+                  <li>Stakeholder management and influence</li>
+                  <li>Leadership transition support</li>
+                  <li>Team alignment and shared vision</li>
+                </ul>
               </div>
 
             </div>
           </div>
         </section>
 
-        {/* CTA */}
         <section className={styles.ctaSection}>
           <div className={styles.ctaInner}>
             <h2>Not sure which fits?</h2>
