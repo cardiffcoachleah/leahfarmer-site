@@ -18,7 +18,6 @@
   align-items: center;
 }
 
-/* Opening text LEFT, photo RIGHT */
 .aboutOpening {
   display: flex;
   flex-direction: column;
@@ -32,7 +31,6 @@
   order: 2;
 }
 
-/* Oval photo */
 .aboutPhoto img {
   width: 320px;
   height: 420px;
@@ -53,7 +51,6 @@
   color: #FFFFFF;
 }
 
-/* Round work with me button */
 .aboutCta {
   display: flex;
   align-items: center;
@@ -139,10 +136,40 @@
 
 .elsewhere a:hover { border-color: #0EB2CD; }
 
+.catsRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.catsRow img {
+  width: 260px;
+  border-radius: 1rem;
+  flex-shrink: 0;
+}
+
+.catsRow p {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.8);
+}
+
 @media (max-width: 900px) {
   .aboutHero, .aboutBody { padding: 3rem 1.5rem; }
   .aboutHeroInner { grid-template-columns: 1fr; gap: 2.5rem; }
   .aboutPhoto { order: 1; }
   .aboutOpening { order: 2; }
   .aboutPhoto img { width: 200px; height: 260px; margin: 0 auto; }
+}
+
+@media (max-width: 600px) {
+  .catsRow {
+    flex-direction: column;
+  }
+  .catsRow img {
+    width: 100%;
+  }
 }
