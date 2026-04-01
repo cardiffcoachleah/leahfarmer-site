@@ -138,7 +138,7 @@
 .logoItem:last-child { border-right: none; }
 .logoItem:hover { color: #0EB2CD; }
 
-/* PULL QUOTE — no bottom border, flows straight into CTA cards */
+/* PULL QUOTE */
 .quoteSection {
   padding: 3.5rem 4rem 3rem;
   background: #00001A;
@@ -169,7 +169,7 @@
   font-style: normal;
 }
 
-/* MID CTA — directly below quote, cards provide structure */
+/* MID CTA */
 .midCta {
   padding: 0 4rem 3rem;
   background: #00001A;
@@ -192,7 +192,6 @@
   gap: 1rem;
 }
 
-/* Card headings in DM Sans to match body — feels more consistent */
 .midCtaCard h3 {
   font-family: var(--font-body);
   font-size: 1.1rem;
@@ -216,6 +215,72 @@
   box-sizing: border-box;
 }
 
+/* PEP TALK */
+.pepTalk {
+  padding: 5rem 4rem;
+  background: #00001A;
+  border-top: 2px solid #067181;
+}
+
+.pepTalkInner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.pepTalkEyebrow {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #0EB2CD;
+  margin: 0;
+}
+
+.pepTalkTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 300;
+  font-style: italic;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pepTalkBody {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.75);
+  margin: 0;
+}
+
+.pepTalkCta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.9rem 2.5rem;
+  background: transparent;
+  color: #0EB2CD;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: 1.5px solid #0EB2CD;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.pepTalkCta:hover {
+  background: #0EB2CD;
+  color: #00001A;
+  transform: translateY(-1px);
+}
+
 /* RESPONSIVE */
 @media (max-width: 900px) {
   .hero { padding: 7rem 1.5rem 3rem; }
@@ -231,4 +296,5 @@
   .quoteSection { padding: 2.5rem 1.5rem 2rem; }
   .midCta { padding: 0 1.5rem 2.5rem; }
   .midCtaInner { grid-template-columns: 1fr; }
+  .pepTalk { padding: 3.5rem 1.5rem; }
 }
