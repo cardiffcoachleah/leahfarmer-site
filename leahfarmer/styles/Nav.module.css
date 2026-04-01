@@ -20,7 +20,7 @@
 }
 
 .logoName {
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--font-body);
   font-weight: 500;
   font-size: 0.95rem;
   letter-spacing: 0.18em;
@@ -28,7 +28,7 @@
 }
 
 .logoSub {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: var(--font-heading);
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   color: var(--teal);
@@ -41,6 +41,7 @@
 }
 
 .links a {
+  font-family: var(--font-body);
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.04em;

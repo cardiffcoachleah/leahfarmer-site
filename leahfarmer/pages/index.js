@@ -3,18 +3,17 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
 
+const COMPANIES = ['Amazon', 'Google', 'GitHub', 'EA', 'Expedia', 'Klarna', 'Stripe', 'Meta']
+
 export default function Home() {
   return (
     <>
       <Head>
         <title>Leah Farmer — Coaching & Advisory</title>
         <meta name="description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Nav />
 
-      {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroPhoto}>
@@ -35,24 +34,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* LOGO STRIP */}
       <section className={styles.logoStrip}>
         <p className={styles.logoLabel}>I've worked with people from:</p>
         <div className={styles.logos}>
-          {['Amazon', 'Google', 'GitHub', 'EA', 'Expedia', 'Klarna', 'Stripe', 'Meta'].map(company => (
+          {COMPANIES.map(company => (
             <span key={company} className={styles.logoItem}>{company}</span>
           ))}
         </div>
       </section>
 
-      {/* PULL QUOTE */}
       <section className={styles.quoteSection}>
         <div className={styles.quoteInner}>
-          <div className={styles.quoteMark}>"</div>
           <blockquote className={styles.quote}>
-            She has a keen ability to get to the core of an issue quickly, effortlessly providing clear and concise insights and new perspectives.
+            "She has a keen ability to get to the core of an issue quickly, effortlessly providing clear and concise insights and new perspectives."
           </blockquote>
           <cite className={styles.quoteAttrib}>— Mark Holleman, Co-Founder & CEO, Thred</cite>
+        </div>
+      </section>
+
+      <section className={styles.midCta}>
+        <div className={styles.midCtaInner}>
+          <div className={styles.midCtaCard}>
+            <h3>Looking for a fractional leader or advisor?</h3>
+            <p>I work alongside founders and investors as a senior product and technology executive.</p>
+            <a href="/fractional" className={styles.ctaPrimary}>Fractional & Advisory →</a>
+          </div>
+          <div className={styles.midCtaCard}>
+            <h3>Looking for a coach?</h3>
+            <p>I work with builders in tech — PMs, engineers, designers, and leaders — who want to grow.</p>
+            <a href="/coaching" className={styles.ctaPrimary}>Coaching →</a>
+          </div>
         </div>
       </section>
 
