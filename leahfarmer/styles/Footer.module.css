@@ -14,7 +14,7 @@
 }
 
 .logoImg {
-  height: 80px;
+  height: 110px;
   width: auto;
   display: block;
 }
@@ -72,5 +72,5 @@
   .footer { padding: 3rem 1.5rem 2rem; }
   .footerTop { flex-direction: column; gap: 2rem; }
   .footerCols { gap: 2.5rem; }
-  .logoImg { height: 60px; }
+  .logoImg { height: 80px; }
 }

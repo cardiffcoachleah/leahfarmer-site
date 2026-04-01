@@ -7,16 +7,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 3rem;
+  padding: 0.4rem 3rem;
   background: rgba(0, 0, 26, 0.97);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(14, 178, 205, 0.2);
+  border-bottom: 1px solid rgba(14, 178, 205, 0.25);
 }
 
 .logo { display: flex; align-items: center; }
 
 .logoImg {
-  height: 90px;
+  height: 110px;
   width: auto;
   display: block;
 }
@@ -39,8 +39,8 @@
 .links a:hover { color: #0EB2CD; }
 
 @media (max-width: 768px) {
-  .nav { padding: 0.5rem 1.5rem; }
-  .logoImg { height: 60px; }
+  .nav { padding: 0.4rem 1.5rem; }
+  .logoImg { height: 70px; }
   .links { gap: 1.25rem; }
   .links a { font-size: 0.875rem; }
 }

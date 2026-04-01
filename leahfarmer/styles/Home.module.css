@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 7rem 4rem 3rem;
+  padding: 8rem 4rem 3rem;
   background: #00001A;
 }
 
@@ -26,8 +26,8 @@
   object-position: center top;
   border-radius: 50%;
   display: block;
-  border: 2px solid rgba(14, 178, 205, 0.4);
-  box-shadow: 0 0 40px rgba(14, 178, 205, 0.15);
+  border: 2px solid rgba(14, 178, 205, 0.5);
+  box-shadow: 0 0 50px rgba(14, 178, 205, 0.2);
 }
 
 .heroContent {
@@ -66,25 +66,29 @@
   flex-wrap: wrap;
 }
 
-/* Equal width buttons */
 .heroCtas .ctaBtn {
   flex: 1;
   text-align: center;
-  min-width: 180px;
+  min-width: 160px;
 }
 
+/* BUTTON — sharp, no blur */
 .ctaBtn {
   display: inline-block;
   padding: 1rem 2rem;
   background: #0EB2CD;
   color: #00001A;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
   border-radius: 2px;
   text-decoration: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   transition: background 0.2s, transform 0.15s;
+  border: none;
+  outline: none;
 }
 
 .ctaBtn:hover {
@@ -96,8 +100,8 @@
 .logoStrip {
   padding: 2rem 4rem;
   background: #00001A;
-  border-top: 1px solid rgba(14, 178, 205, 0.2);
-  border-bottom: 1px solid rgba(14, 178, 205, 0.2);
+  border-top: 2px solid #067181;
+  border-bottom: 2px solid #067181;
 }
 
 .logoLabel {
@@ -128,7 +132,7 @@
   text-transform: uppercase;
   color: rgba(255,255,255,0.75);
   padding: 0.4rem 1.25rem;
-  border-right: 1px solid rgba(14, 178, 205, 0.25);
+  border-right: 1px solid #067181;
   white-space: nowrap;
   transition: color 0.2s;
 }
@@ -140,7 +144,7 @@
 .quoteSection {
   padding: 3.5rem 4rem;
   background: #00001A;
-  border-bottom: 1px solid rgba(14, 178, 205, 0.15);
+  border-bottom: 2px solid #067181;
 }
 
 .quoteInner {
@@ -164,7 +168,7 @@
   font-size: 0.82rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.85);
+  color: #0EB2CD;
   font-style: normal;
 }
 
@@ -184,7 +188,7 @@
 
 .midCtaCard {
   background: #00001A;
-  border: 1px solid rgba(14, 178, 205, 0.4);
+  border: 2px solid #067181;
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
@@ -210,11 +214,12 @@
   width: 100%;
   text-align: center;
   margin-top: 0.5rem;
+  box-sizing: border-box;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero { padding: 6rem 1.5rem 2.5rem; }
+  .hero { padding: 7rem 1.5rem 2.5rem; }
   .heroInner { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
   .heroPhoto img { width: 200px; height: 200px; margin: 0 auto; }
   .heroHeadline::after { margin: 1rem auto 0; }
