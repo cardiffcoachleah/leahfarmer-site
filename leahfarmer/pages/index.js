@@ -71,6 +71,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PEP TALK */}
+      <section className={styles.pepTalk}>
+        <div className={styles.pepTalkInner}>
+          <p className={styles.pepTalkEyebrow}>Something I made</p>
+          <h2 className={styles.pepTalkTitle}>Sometimes you just need a pep talk.</h2>
+          <p className={styles.pepTalkBody}>Some days are just hard. Sometimes you don't need advice — you need someone to see you clearly and say the true thing with warmth. I built a little tool that does exactly that. Free. Takes two minutes. Written just for you.</p>
+          <a href="https://needapeptalk.com" target="_blank" rel="noopener" className={styles.pepTalkCta}>Get a pep talk →</a>
+        </div>
+      </section>
+
       <Footer />
     </>
   )
