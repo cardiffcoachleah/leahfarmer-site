@@ -1,0 +1,281 @@
+.main {
+  padding-top: 80px;
+}
+
+/* PAGE HERO */
+.pageHero {
+  padding: 4rem 4rem 3rem;
+  border-bottom: 1px solid var(--white-10);
+  position: relative;
+  overflow: hidden;
+}
+
+.pageHero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(14, 178, 205, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.pageHeroInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+
+.pageTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+/* SECTIONS */
+.section {
+  padding: 3.5rem 4rem;
+  border-bottom: 1px solid var(--white-10);
+}
+
+.sectionInner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+/* PROSE */
+.prose {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.prose p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--white-70);
+  margin-bottom: 1.25rem;
+}
+
+.prose p:last-child { margin-bottom: 0; }
+
+/* PACKAGES — 3 columns */
+.packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5px;
+  background: var(--white-10);
+  margin: 2.5rem 0 1.5rem;
+  border: 1px solid var(--white-10);
+}
+
+.package {
+  background: var(--black);
+  padding: 2rem 1.75rem;
+}
+
+.package h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--teal);
+  margin-bottom: 0.75rem;
+}
+
+.package p {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--white-70);
+}
+
+.packageNote {
+  font-family: var(--font-body);
+  font-size: 0.825rem;
+  color: var(--white-30);
+  line-height: 1.6;
+}
+
+.packageNote a {
+  color: var(--teal);
+  border-bottom: 1px solid rgba(14, 178, 205, 0.3);
+  transition: border-color 0.2s;
+}
+
+.packageNote a:hover { border-color: var(--teal); }
+
+/* TESTIMONIALS — 2x2 grid */
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5px;
+  background: var(--white-10);
+  border: 1px solid var(--white-10);
+  margin-top: 2rem;
+}
+
+.testimonial {
+  background: var(--black);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.testimonialQuote {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--white);
+  flex: 1;
+}
+
+.testimonialAttrib {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.testimonialName {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--teal);
+}
+
+.testimonialRole {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  color: var(--white-30);
+}
+
+/* SERVICES — card style */
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  background: var(--white-10);
+  border: 1px solid var(--white-10);
+}
+
+.service {
+  background: var(--black);
+  padding: 2.5rem 3rem;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.serviceNumber {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--teal);
+  opacity: 0.25;
+  line-height: 1;
+  padding-top: 0.4rem;
+}
+
+.serviceTitle {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 1rem;
+  grid-column: 2;
+}
+
+.service p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--white-70);
+  margin-bottom: 0.75rem;
+  grid-column: 2;
+}
+
+.service p:last-child { margin-bottom: 0; }
+
+.serviceNote {
+  font-size: 0.85rem !important;
+  color: var(--teal) !important;
+  opacity: 0.85;
+}
+
+.serviceDivider { display: none; }
+
+/* CTA SECTION */
+.ctaSection {
+  padding: 5rem 4rem;
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.ctaInner h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.ctaInner p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--white-70);
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.9rem 2.25rem;
+  background: var(--teal);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.ctaButton:hover {
+  background: var(--teal-light);
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .pageHero, .section, .ctaSection { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .packages { grid-template-columns: 1fr; }
+  .testimonials { grid-template-columns: 1fr; }
+  .service {
+    grid-template-columns: 1fr;
+    padding: 2rem 1.5rem;
+  }
+  .serviceNumber { display: none; }
+  .serviceTitle, .service p { grid-column: 1; }
+}
