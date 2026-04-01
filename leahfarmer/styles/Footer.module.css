@@ -73,4 +73,9 @@
   .footerTop { flex-direction: column; gap: 2rem; }
   .footerCols { gap: 2.5rem; }
   .logoImg { height: 80px; }
+  .footerBottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 }
