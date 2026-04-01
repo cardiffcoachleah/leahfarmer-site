@@ -17,8 +17,9 @@ export default function Footer() {
           <div className={styles.footerCol}>
             <h4>Connect</h4>
             <a href="https://linkedin.com/in/leahfarmer" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://instagram.com/leahfarmercoaching" target="_blank" rel="noopener">Instagram</a>
             <a href="https://leahfarmer.substack.com" target="_blank" rel="noopener">Substack</a>
-            <a href="https://practicalproductmanagementpodcast.com" target="_blank" rel="noopener">Podcast</a>
+            <a href="https://leahfarmer.com/onequestion" target="_blank" rel="noopener">One Question Podcast</a>
           </div>
         </div>
       </div>
