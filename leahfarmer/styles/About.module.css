@@ -1,12 +1,12 @@
 .main {
-  padding-top: 100px;
+  padding-top: 110px;
   background: #00001A;
 }
 
 .aboutHero {
   padding: 4rem 4rem 3.5rem;
   background: #00001A;
-  border-bottom: 1px solid rgba(14, 178, 205, 0.2);
+  border-bottom: 2px solid #067181;
 }
 
 .aboutHeroInner {
@@ -21,8 +21,19 @@
 .aboutPhoto img {
   width: 100%;
   max-width: 360px;
-  border-radius: 2px;
+  border-radius: 50%;
   display: block;
+  border: 2px solid rgba(14, 178, 205, 0.4);
+  box-shadow: 0 0 40px rgba(14, 178, 205, 0.15);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.aboutOpening {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .openingText {
@@ -32,6 +43,27 @@
   font-style: italic;
   line-height: 1.6;
   color: #FFFFFF;
+}
+
+.aboutCta {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: #0EB2CD;
+  color: #00001A;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s, transform 0.15s;
+  align-self: flex-start;
+}
+
+.aboutCta:hover {
+  background: #6AE8A4;
+  transform: translateY(-1px);
 }
 
 .aboutBody {
@@ -54,16 +86,17 @@
 
 .divider {
   height: 1px;
-  background: rgba(14, 178, 205, 0.2);
+  background: #067181;
   margin: 3rem 0;
 }
 
-.human h2 {
-  font-family: var(--font-heading);
-  font-size: 1.75rem;
-  font-weight: 400;
-  color: #FFFFFF;
+.humanTitle {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0EB2CD;
   margin-bottom: 1.75rem;
+  letter-spacing: 0.01em;
 }
 
 .human p {
@@ -93,5 +126,5 @@
 @media (max-width: 900px) {
   .aboutHero, .aboutBody { padding: 3rem 1.5rem; }
   .aboutHeroInner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .aboutPhoto img { max-width: 100%; }
+  .aboutPhoto img { max-width: 240px; margin: 0 auto; }
 }

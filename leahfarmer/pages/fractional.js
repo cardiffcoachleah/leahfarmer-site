@@ -32,32 +32,25 @@ export default function Fractional() {
           </div>
         </section>
 
-        {/* THREE SERVICES */}
+        {/* THREE SERVICES — side by side pillars */}
         <section className={styles.section}>
           <div className={styles.sectionInner}>
-            <div className={styles.services}>
+            <div className={styles.pillars}>
 
-              <div className={styles.service}>
-                <span className={styles.serviceNumber}>01</span>
-                <h2 className={styles.serviceTitle}>Fractional Leadership</h2>
+              <div className={styles.pillar}>
+                <h2 className={styles.pillarTitle}>Fractional Leadership</h2>
                 <p>Some companies need a senior product and technology leader but aren't ready — or don't need — a full-time hire. I come in as your CPO, CPTO, or VP Product. One day a week, two days, three — whatever the company needs. I work alongside your founders and leadership team to build strategy, grow your product function, and get your builders moving in the right direction.</p>
                 <p className={styles.serviceNote}>Currently serving as fractional CPTO at a travel startup. Open to one additional engagement.</p>
               </div>
 
-              <div className={styles.serviceDivider} />
-
-              <div className={styles.service}>
-                <span className={styles.serviceNumber}>02</span>
-                <h2 className={styles.serviceTitle}>Product Advisory</h2>
+              <div className={styles.pillar}>
+                <h2 className={styles.pillarTitle}>Product Advisory</h2>
                 <p>For VCs, PEs, and founders: technical due diligence tells you if the architecture is sound. Product due diligence tells you if the company is building the right thing — and that question doesn't get asked nearly enough. While your CTO advisor is looking at the code and the infrastructure, I'm looking at the roadmap, the customer understanding, the product strategy, and whether the person leading it actually knows what they're doing.</p>
                 <p>It's not a replacement for technical due diligence. It's what sits alongside it.</p>
               </div>
 
-              <div className={styles.serviceDivider} />
-
-              <div className={styles.service}>
-                <span className={styles.serviceNumber}>03</span>
-                <h2 className={styles.serviceTitle}>Team Interventions</h2>
+              <div className={styles.pillar}>
+                <h2 className={styles.pillarTitle}>Team Interventions</h2>
                 <p>Sometimes a team is stuck. Communication has broken down, burnout is spreading, or nobody can agree on how to work together. I come in, diagnose what's actually going on, and help fix it. This might be a working genius mapping session, a burnout workshop, a communication reset — whatever the situation calls for.</p>
               </div>
 

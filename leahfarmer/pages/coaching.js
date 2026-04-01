@@ -14,11 +14,16 @@ export default function Coaching() {
 
       <main className={styles.main}>
 
-        {/* HERO */}
+        {/* PAGE HERO with CTA button */}
         <section className={styles.pageHero}>
           <div className={styles.pageHeroInner}>
             <p className={styles.eyebrow}>Coaching</p>
-            <h1 className={styles.pageTitle}>You're good at what you do.<br />You want to be better.</h1>
+            <div className={styles.pageHeroRow}>
+              <h1 className={styles.pageTitle}>You're good at what you do.<br />You want to be better.</h1>
+              <a href="https://calendly.com/lfcoaching/free-discovery-call" className={styles.heroCtaRound} target="_blank" rel="noopener">
+                Book a free<br />discovery call
+              </a>
+            </div>
           </div>
         </section>
 
@@ -33,7 +38,7 @@ export default function Coaching() {
         {/* HOW I WORK */}
         <section className={styles.section}>
           <div className={styles.sectionInner}>
-            <h2 className={styles.sectionTitle}>How I work</h2>
+            <h2 className={styles.sectionTitleTeal}>How I work</h2>
             <div className={styles.prose}>
               <p>Sessions are 60 minutes, online. Some clients come weekly when something's pressing. Some settle into every two weeks. Some book a block of sessions, work through what they need, then come back when the next thing surfaces. A few have been with me for years.</p>
               <p>I don't have a fixed programme I run everyone through. Most clients want to bring the problem and work on it together — and that's mostly what we do. If you need more structure, tools, frameworks, a Miro board and reading list, I can do that too.</p>
@@ -45,7 +50,7 @@ export default function Coaching() {
         {/* PRICING */}
         <section className={styles.section}>
           <div className={styles.sectionInner}>
-            <h2 className={styles.sectionTitle}>Working with me</h2>
+            <h2 className={styles.sectionTitleTeal}>Working with me</h2>
             <div className={styles.prose}>
               <p>I work with clients across the UK, Europe, the US, and beyond — so rather than list a price that might not make sense in your currency, I keep it simple: get in touch and I'll send you pricing in your local currency.</p>
             </div>
@@ -63,14 +68,14 @@ export default function Coaching() {
                 <p>For when you know you need more runway. Includes async support between sessions via Voxer or WhatsApp.</p>
               </div>
             </div>
-            <p className={styles.packageNote}>All packages valid for 12 months. Start with four and want ten? I'll bill you the difference. Companies and teams: <a href="mailto:leah@leahfarmer.com">get in touch</a>.</p>
+            <p className={styles.packageNote}>All packages valid for 12 months. Start with four and want ten? I'll just bill you the difference. <a href="mailto:leah@leahfarmer.com">Companies and teams: get in touch.</a></p>
           </div>
         </section>
 
         {/* TESTIMONIALS */}
         <section className={styles.section}>
           <div className={styles.sectionInner}>
-            <h2 className={styles.sectionTitle}>What clients say</h2>
+            <h2 className={styles.sectionTitleTeal}>What clients say</h2>
             <div className={styles.testimonials}>
               {[
                 {
