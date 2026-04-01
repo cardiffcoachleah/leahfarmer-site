@@ -17,7 +17,12 @@ export default function Fractional() {
         <section className={styles.pageHero}>
           <div className={styles.pageHeroInner}>
             <p className={styles.eyebrow}>Fractional & Advisory</p>
-            <h1 className={styles.pageTitle}>For the companies and investors<br />building in tech</h1>
+            <div className={styles.pageHeroRow}>
+              <h1 className={styles.pageTitle}>For the companies and investors<br />building in tech</h1>
+              <a href="https://calendly.com/lfcoaching/free-discovery-call" className={styles.heroCtaRound} target="_blank" rel="noopener">
+                Let's<br />talk
+              </a>
+            </div>
           </div>
         </section>
 
