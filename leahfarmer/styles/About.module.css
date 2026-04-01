@@ -1,10 +1,12 @@
 .main {
-  padding-top: 80px;
+  padding-top: 100px;
+  background: #00001A;
 }
 
 .aboutHero {
-  padding: 5rem 4rem;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 4rem 4rem 3.5rem;
+  background: #00001A;
+  border-bottom: 1px solid rgba(14, 178, 205, 0.2);
 }
 
 .aboutHeroInner {
@@ -18,22 +20,23 @@
 
 .aboutPhoto img {
   width: 100%;
-  max-width: 380px;
+  max-width: 360px;
   border-radius: 2px;
-  filter: grayscale(20%);
+  display: block;
 }
 
 .openingText {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.3vw, 1.9rem);
   font-weight: 300;
   font-style: italic;
   line-height: 1.6;
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 .aboutBody {
-  padding: 5rem 4rem;
+  padding: 4rem 4rem;
+  background: #00001A;
 }
 
 .aboutBodyInner {
@@ -42,57 +45,53 @@
 }
 
 .credentials p {
+  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.85;
-  color: var(--white-70);
+  color: rgba(255,255,255,0.8);
   margin-bottom: 1.5rem;
 }
 
 .divider {
   height: 1px;
-  background: rgba(255,255,255,0.08);
-  margin: 3.5rem 0;
+  background: rgba(14, 178, 205, 0.2);
+  margin: 3rem 0;
 }
 
 .human h2 {
+  font-family: var(--font-heading);
   font-size: 1.75rem;
   font-weight: 400;
-  color: var(--white);
-  margin-bottom: 2rem;
+  color: #FFFFFF;
+  margin-bottom: 1.75rem;
 }
 
 .human p {
+  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.85;
-  color: var(--white-70);
+  color: rgba(255,255,255,0.8);
   margin-bottom: 1.5rem;
 }
 
 .elsewhere p {
+  font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.85;
-  color: var(--white-70);
+  color: rgba(255,255,255,0.8);
 }
 
 .elsewhere a {
-  color: var(--teal);
+  color: #0EB2CD;
   border-bottom: 1px solid rgba(14, 178, 205, 0.3);
   transition: border-color 0.2s;
+  text-decoration: none;
 }
 
-.elsewhere a:hover {
-  border-color: var(--teal);
-}
+.elsewhere a:hover { border-color: #0EB2CD; }
 
 @media (max-width: 900px) {
-  .aboutHero, .aboutBody {
-    padding: 4rem 1.5rem;
-  }
-  .aboutHeroInner {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .aboutPhoto img {
-    max-width: 100%;
-  }
+  .aboutHero, .aboutBody { padding: 3rem 1.5rem; }
+  .aboutHeroInner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .aboutPhoto img { max-width: 100%; }
 }
