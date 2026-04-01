@@ -1,13 +1,13 @@
 .main {
-  padding-top: 100px;
+  padding-top: 110px;
   background: #00001A;
 }
 
 /* PAGE HERO */
 .pageHero {
-  padding: 3.5rem 4rem 3rem;
+  padding: 3rem 4rem 3rem;
   background: #00001A;
-  border-bottom: 1px solid rgba(14, 178, 205, 0.2);
+  border-bottom: 2px solid #067181;
 }
 
 .pageHeroInner {
@@ -36,7 +36,7 @@
 .section {
   padding: 3rem 4rem;
   background: #00001A;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid #067181;
 }
 
 .sectionInner {
@@ -45,11 +45,12 @@
 }
 
 .sectionTitle {
-  font-family: var(--font-heading);
-  font-size: 1.8rem;
-  font-weight: 400;
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 500;
   color: #FFFFFF;
   margin-bottom: 2rem;
+  letter-spacing: 0.01em;
 }
 
 /* PROSE */
@@ -78,16 +79,17 @@
 
 .package {
   background: #00001A;
-  border: 1px solid rgba(14, 178, 205, 0.35);
+  border: 2px solid #067181;
   padding: 2rem 1.75rem;
 }
 
 .package h3 {
-  font-family: var(--font-heading);
-  font-size: 1.35rem;
-  font-weight: 400;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
   color: #0EB2CD;
   margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
 }
 
 .package p {
@@ -123,7 +125,7 @@
 
 .testimonial {
   background: #00001A;
-  border: 1px solid rgba(14, 178, 205, 0.25);
+  border: 1px solid #067181;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -167,7 +169,7 @@
 
 .service {
   background: #00001A;
-  border: 1px solid rgba(14, 178, 205, 0.3);
+  border: 2px solid #067181;
   padding: 2.5rem 3rem;
   display: grid;
   grid-template-columns: 60px 1fr;
@@ -186,12 +188,13 @@
 }
 
 .serviceTitle {
-  font-family: var(--font-heading);
-  font-size: 1.7rem;
-  font-weight: 400;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 600;
   color: #FFFFFF;
   margin-bottom: 1rem;
   grid-column: 2;
+  letter-spacing: 0.01em;
 }
 
 .service p {
@@ -226,9 +229,9 @@
 }
 
 .ctaInner h2 {
-  font-family: var(--font-heading);
-  font-size: 2.2rem;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-size: 1.75rem;
+  font-weight: 500;
   color: #FFFFFF;
   margin-bottom: 0.75rem;
 }
@@ -242,15 +245,17 @@
 
 .ctaButton {
   display: inline-block;
-  padding: 1rem 2.5rem;
+  padding: 0.9rem 2.5rem;
   background: #0EB2CD;
   color: #00001A;
   font-family: var(--font-body);
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
   border-radius: 2px;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: background 0.2s, transform 0.15s;
 }
 
@@ -261,6 +266,7 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+  .main { padding-top: 90px; }
   .pageHero, .section, .ctaSection { padding-left: 1.5rem; padding-right: 1.5rem; }
   .packages { grid-template-columns: 1fr; }
   .testimonials { grid-template-columns: 1fr; }
