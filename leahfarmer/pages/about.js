@@ -40,13 +40,9 @@ export default function About() {
               <h2 className={styles.humanTitle}>Beyond the work</h2>
               <p>I'm a sister, an aunt, and a devoted friend. I've lived in Seattle, Stockholm, Denver, Berlin, and London — and I've landed, by choice, in Cardiff. I wanted space, countryside, and a smaller city after years of big ones. Cardiff gives me all of that, plus easy access to some of the most beautiful coastline in the world.</p>
               <p>I grew up in California but New Mexico is where I lived the longest and it still feels like home. I miss the skies and the green chilli more than I can explain. I learned to swim in the Caribbean — my parents were missionaries and Honduras was part of my early life. Water has felt like home ever since.</p>
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem', margin: '1rem 0' }}>
-                <img
-                  src="/oliver-lucy.jpg"
-                  alt="Oliver and Lucy"
-                  style={{ width: '260px', borderRadius: '1rem', flexShrink: 0 }}
-                />
-                <p style={{ margin: 0 }}>I have two cats, Oliver and Lucy. I love books — fiction, nonfiction, business, all of it. I write, I journal, I follow the moon. I'm drawn to the mystical and the intentional. I meditate. I set intentions. I believe there's more going on than most spreadsheets account for.</p>
+              <div className={styles.catsRow}>
+                <img src="/oliver-lucy.jpg" alt="Oliver and Lucy" />
+                <p>I have two cats, Oliver and Lucy. I love books — fiction, nonfiction, business, all of it. I write, I journal, I follow the moon. I'm drawn to the mystical and the intentional. I meditate. I set intentions. I believe there's more going on than most spreadsheets account for.</p>
               </div>
             </div>
 
