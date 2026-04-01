@@ -5,8 +5,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerTop}>
         <div className={styles.footerLogo}>
-          <span className={styles.logoName}>LEAH FARMER</span>
-          <span className={styles.logoSub}>Coaching & Advisory</span>
+          <img src="/logo.png" alt="Leah Farmer" className={styles.logoImg} />
         </div>
         <div className={styles.footerCols}>
           <div className={styles.footerCol}>

@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 7rem 4rem 4rem;
+  padding: 6rem 4rem 4rem;
   position: relative;
   overflow: hidden;
 }
@@ -29,26 +29,34 @@
   align-items: center;
 }
 
+.heroPhoto {
+  display: flex;
+  justify-content: center;
+}
+
 .heroPhoto img {
-  width: 100%;
-  max-width: 380px;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
   display: block;
-  filter: drop-shadow(0 0 50px rgba(14, 178, 205, 0.1));
+  border: 2px solid rgba(14, 178, 205, 0.3);
+  box-shadow: 0 0 60px rgba(14, 178, 205, 0.12);
 }
 
 .heroContent {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 .heroHeadline {
   font-family: var(--font-heading);
-  font-size: clamp(3.5rem, 6vw, 5.5rem);
+  font-size: clamp(3.5rem, 5.5vw, 5.5rem);
   font-weight: 300;
   line-height: 1.05;
   color: var(--white);
-  position: relative;
 }
 
 .heroHeadline::after {
@@ -61,7 +69,7 @@
 }
 
 .heroSubhead {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
   color: var(--white-70);
   max-width: 500px;
@@ -73,7 +81,8 @@
   flex-wrap: wrap;
 }
 
-.ctaPrimary {
+/* UNIFIED BUTTON — used everywhere on homepage */
+.ctaBtn {
   display: inline-block;
   padding: 0.8rem 1.75rem;
   background: var(--teal);
@@ -83,50 +92,31 @@
   font-weight: 500;
   letter-spacing: 0.04em;
   border-radius: 2px;
+  text-decoration: none;
   transition: background 0.2s, transform 0.15s;
-  text-decoration: none;
 }
 
-.ctaPrimary:hover {
+.ctaBtn:hover {
   background: var(--teal-light);
-  transform: translateY(-1px);
-}
-
-.ctaSecondary {
-  display: inline-block;
-  padding: 0.8rem 1.75rem;
-  border: 1px solid rgba(14, 178, 205, 0.4);
-  color: var(--teal);
-  font-family: var(--font-body);
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  border-radius: 2px;
-  transition: border-color 0.2s, color 0.2s, transform 0.15s;
-  text-decoration: none;
-}
-
-.ctaSecondary:hover {
-  border-color: var(--teal);
-  color: var(--white);
   transform: translateY(-1px);
 }
 
 /* LOGO STRIP */
 .logoStrip {
-  padding: 2.5rem 4rem;
+  padding: 2rem 4rem;
   border-top: 1px solid var(--white-10);
   border-bottom: 1px solid var(--white-10);
+  background: rgba(14, 178, 205, 0.03);
 }
 
 .logoLabel {
   font-family: var(--font-body);
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--white-30);
+  color: rgba(255,255,255,0.5);
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .logos {
@@ -140,43 +130,39 @@
 
 .logoItem {
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--white-30);
+  color: rgba(255,255,255,0.55);
   padding: 0.4rem 1.5rem;
   border-right: 1px solid var(--white-10);
   transition: color 0.2s;
 }
 
-.logoItem:last-child {
-  border-right: none;
-}
-
-.logoItem:hover {
-  color: var(--teal);
-}
+.logoItem:last-child { border-right: none; }
+.logoItem:hover { color: var(--teal); }
 
 /* PULL QUOTE */
 .quoteSection {
-  padding: 5rem 4rem;
+  padding: 4rem 4rem;
+  border-bottom: 1px solid var(--white-10);
 }
 
 .quoteInner {
-  max-width: 700px;
+  max-width: 680px;
   margin: 0 auto;
   text-align: center;
 }
 
 .quote {
   font-family: var(--font-heading);
-  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
   font-weight: 300;
   font-style: italic;
   line-height: 1.55;
   color: var(--white);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .quoteAttrib {
@@ -190,8 +176,7 @@
 
 /* MID CTA */
 .midCta {
-  padding: 4rem;
-  border-top: 1px solid var(--white-10);
+  padding: 3rem 4rem;
 }
 
 .midCtaInner {
@@ -214,7 +199,7 @@
 
 .midCtaCard h3 {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 400;
   color: var(--white);
 }
@@ -229,20 +214,14 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero { padding: 6rem 1.5rem 3rem; }
-  .heroInner {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-    text-align: center;
-  }
-  .heroPhoto { display: flex; justify-content: center; }
-  .heroPhoto img { max-width: 240px; }
+  .hero { padding: 5.5rem 1.5rem 3rem; }
+  .heroInner { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
+  .heroPhoto img { width: 220px; height: 220px; margin: 0 auto; }
   .heroHeadline::after { margin: 1rem auto 0; }
   .heroSubhead { margin: 0 auto; }
   .heroCtas { justify-content: center; }
-  .logoStrip { padding: 2rem 1.5rem; }
-  .logoItem { padding: 0.4rem 1rem; }
-  .quoteSection { padding: 3.5rem 1.5rem; }
-  .midCta { padding: 3rem 1.5rem; }
+  .logoStrip { padding: 1.75rem 1.5rem; }
+  .quoteSection { padding: 3rem 1.5rem; }
+  .midCta { padding: 2.5rem 1.5rem; }
   .midCtaInner { grid-template-columns: 1fr; }
 }
