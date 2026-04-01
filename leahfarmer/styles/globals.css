@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  background: var(--black);
-  color: var(--white);
+  background: #00001A;
+  color: #FFFFFF;
   font-family: var(--font-body);
   font-weight: 300;
   line-height: 1.7;
