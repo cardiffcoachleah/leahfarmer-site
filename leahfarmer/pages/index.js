@@ -11,9 +11,14 @@ export default function Home() {
       <Head>
         <title>Leah Farmer — Coaching & Advisory</title>
         <meta name="description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
+        <meta property="og:title" content="Leah Farmer — Coaching & Advisory" />
+        <meta property="og:description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
+        <meta property="og:image" content="https://leahfarmer.com/headshot.png" />
+        <meta property="og:url" content="https://leahfarmer.com" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Nav />
-
       {/* HERO */}
       <section className={styles.hero}>
         <div className={styles.heroInner}>
@@ -34,7 +39,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* LOGO STRIP */}
       <section className={styles.logoStrip}>
         <p className={styles.logoLabel}>I've worked with people from:</p>
@@ -44,7 +48,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* PULL QUOTE */}
       <section className={styles.quoteSection}>
         <div className={styles.quoteInner}>
@@ -54,7 +57,6 @@ export default function Home() {
           <cite className={styles.quoteAttrib}>— Mark Holleman, Co-Founder & CEO, Thred</cite>
         </div>
       </section>
-
       {/* MID CTA */}
       <section className={styles.midCta}>
         <div className={styles.midCtaInner}>
@@ -70,7 +72,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* PEP TALK */}
       <section className={styles.pepTalk}>
         <div className={styles.pepTalkInner}>
@@ -80,7 +81,6 @@ export default function Home() {
           <a href="https://needapeptalk.com" target="_blank" rel="noopener" className={styles.pepTalkCta}>Get a pep talk →</a>
         </div>
       </section>
-
       <Footer />
     </>
   )
