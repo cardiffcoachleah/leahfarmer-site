@@ -47,6 +47,25 @@ export default function Coaching() {
           </div>
         </section>
 
+        {/* THE PRODUCT ROOM */}
+        <section className={styles.section}>
+          <div className={styles.sectionInner}>
+            <h2 className={styles.sectionTitleTeal}>Looking for community?</h2>
+            <div className={styles.prose}>
+              <p>The Product Room is a small, intentional space for mid-career product managers and product leaders. Live sessions, honest conversation, and a community that gets it.</p>
+            </div>
+            <a
+              href="https://www.skool.com/the-product-room-9295"
+              className={styles.ctaButton}
+              target="_blank"
+              rel="noopener"
+              style={{ display: 'inline-block', marginTop: '1.5rem' }}
+            >
+              Check out The Product Room on Skool →
+            </a>
+          </div>
+        </section>
+
         {/* PRICING */}
         <section className={styles.section}>
           <div className={styles.sectionInner}>
