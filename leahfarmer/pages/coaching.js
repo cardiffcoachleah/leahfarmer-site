@@ -37,58 +37,64 @@ export default function Coaching() {
 
         {/* HOW I WORK + PRODUCT ROOM SIDEBAR */}
         <section className={styles.section}>
-          <div className={styles.sectionInner} style={{ display: 'grid', gridTemplateColumns: '1fr 260px', gap: '3rem', alignItems: 'start' }}>
-
-            {/* Left: How I work */}
-            <div>
-              <h2 className={styles.sectionTitleTeal}>How I work</h2>
-              <div className={styles.prose}>
-                <p>Sessions are 60 minutes, online. Some clients come weekly when something's pressing. Some settle into every two weeks. Some book a block of sessions, work through what they need, then come back when the next thing surfaces. A few have been with me for years.</p>
-                <p>I don't have a fixed programme I run everyone through. Most clients want to bring the problem and work on it together — and that's mostly what we do. If you need more structure, tools, frameworks, a Miro board and reading list, I can do that too.</p>
-                <p>What I will do, regardless of where you are, is ask you questions you might not expect. Sometimes about what you're feeling. Sometimes about where you feel it. Not because I'm a therapist — I'm not — but because the body often knows something the spreadsheet doesn't. You don't have to be comfortable with that from day one. Most people aren't. It tends to become useful anyway.</p>
-              </div>
-            </div>
-
-            {/* Right: Product Room callout */}
+          <div className={styles.sectionInner}>
             <div style={{
-              display: 'flex',
-              flexDirection: 'column',
+              display: 'grid',
+              gridTemplateColumns: '1fr 240px',
+              gap: '3rem',
               alignItems: 'center',
-              textAlign: 'center',
-              paddingTop: '0.5rem',
-              borderLeft: '1px solid rgba(14, 178, 205, 0.2)',
-              paddingLeft: '2rem',
             }}>
-              <img
-                src="/TPR_Logo_Round.png"
-                alt="The Product Room"
-                style={{ width: '120px', height: '120px', borderRadius: '50%', marginBottom: '1rem' }}
-              />
-              <p style={{
-                fontSize: '0.85rem',
-                color: 'var(--color-text-secondary, #888)',
-                lineHeight: '1.5',
-                marginBottom: '1.25rem',
-              }}>
-                Looking for community?
-              </p>
-              <a
-                href="https://www.skool.com/the-product-room-9295"
-                target="_blank"
-                rel="noopener"
-                style={{
-                  fontSize: '0.8rem',
-                  color: '#0EB2CD',
-                  textDecoration: 'none',
-                  borderBottom: '1px solid rgba(14, 178, 205, 0.4)',
-                  paddingBottom: '2px',
-                  letterSpacing: '0.02em',
-                }}
-              >
-                Check out The Product Room on Skool →
-              </a>
-            </div>
 
+              {/* Left: How I work */}
+              <div>
+                <h2 className={styles.sectionTitleTeal}>How I work</h2>
+                <div className={styles.prose}>
+                  <p>Sessions are 60 minutes, online. Some clients come weekly when something's pressing. Some settle into every two weeks. Some book a block of sessions, work through what they need, then come back when the next thing surfaces. A few have been with me for years.</p>
+                  <p>I don't have a fixed programme I run everyone through. Most clients want to bring the problem and work on it together — and that's mostly what we do. If you need more structure, tools, frameworks, a Miro board and reading list, I can do that too.</p>
+                  <p>What I will do, regardless of where you are, is ask you questions you might not expect. Sometimes about what you're feeling. Sometimes about where you feel it. Not because I'm a therapist — I'm not — but because the body often knows something the spreadsheet doesn't. You don't have to be comfortable with that from day one. Most people aren't. It tends to become useful anyway.</p>
+                </div>
+              </div>
+
+              {/* Right: Product Room callout */}
+              <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                textAlign: 'center',
+                borderLeft: '1px solid rgba(14, 178, 205, 0.2)',
+                paddingLeft: '2rem',
+              }}>
+                <img
+                  src="/TPR Logo Round.png"
+                  alt="The Product Room"
+                  style={{ width: '120px', height: '120px', borderRadius: '50%', marginBottom: '1rem' }}
+                />
+                <p style={{
+                  fontSize: '0.85rem',
+                  color: 'rgba(255,255,255,0.5)',
+                  lineHeight: '1.5',
+                  marginBottom: '1.25rem',
+                }}>
+                  Looking for community?
+                </p>
+                <a
+                  href="https://www.skool.com/the-product-room-9295"
+                  target="_blank"
+                  rel="noopener"
+                  style={{
+                    fontSize: '0.8rem',
+                    color: '#0EB2CD',
+                    textDecoration: 'none',
+                    borderBottom: '1px solid rgba(14, 178, 205, 0.4)',
+                    paddingBottom: '2px',
+                    letterSpacing: '0.02em',
+                  }}
+                >
+                  Check out The Product Room on Skool →
+                </a>
+              </div>
+
+            </div>
           </div>
         </section>
 
