@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import styles from '../styles/About.module.css'
@@ -27,7 +28,14 @@ export default function About() {
         <section className={styles.aboutHero}>
           <div className={styles.aboutHeroInner}>
             <div className={styles.aboutPhoto}>
-              <img src="/leah-about.jpg" alt="Leah Farmer" />
+              <Image
+                src="/leah-about.jpg"
+                alt="Leah Farmer"
+                width={600}
+                height={800}
+                priority
+                style={{ width: '100%', height: 'auto' }}
+              />
             </div>
             <div className={styles.aboutOpening}>
               <p className={styles.openingText}>
@@ -67,7 +75,13 @@ export default function About() {
                 I grew up in California but New Mexico is where I lived the longest and it still feels like home. I miss the skies and the green chilli more than I can explain. I learned to swim in the Caribbean — my parents were missionaries and Honduras was part of my early life. Water has felt like home ever since.
               </p>
               <div className={styles.catsRow}>
-                <img src="/oliver-lucy.jpg" alt="Oliver and Lucy" />
+                <Image
+                  src="/oliver-lucy.jpg"
+                  alt="Oliver and Lucy"
+                  width={600}
+                  height={400}
+                  style={{ width: '100%', height: 'auto' }}
+                />
                 <p>
                   I have two cats, Oliver and Lucy. I love books — fiction, nonfiction, business, all of it. I write, I journal, I follow the moon. I&apos;m drawn to the mystical and the intentional. I meditate. I set intentions. I believe there&apos;s more going on than most spreadsheets account for.
                 </p>
