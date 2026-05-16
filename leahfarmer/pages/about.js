@@ -7,32 +7,19 @@ export default function About() {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width" />
         <title>About — Leah Farmer</title>
         <meta name="description" content="Senior technology executive and ICF PCC-certified coach with 25 years building products and leading teams. Based in Cardiff, Wales." />
         <link rel="canonical" href="https://www.leahfarmer.com/about" />
-
         <meta property="og:title" content="About — Leah Farmer" />
         <meta property="og:description" content="Senior technology executive and ICF PCC-certified coach with 25 years building products and leading teams. Based in Cardiff, Wales." />
         <meta property="og:image" content="https://www.leahfarmer.com/leah-about.jpg" />
         <meta property="og:url" content="https://www.leahfarmer.com/about" />
         <meta property="og:type" content="website" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About — Leah Farmer" />
         <meta name="twitter:description" content="Senior technology executive and ICF PCC-certified coach with 25 years building products and leading teams. Based in Cardiff, Wales." />
         <meta name="twitter:image" content="https://www.leahfarmer.com/leah-about.jpg" />
-
-        <link rel="icon" href="/LFCA Logo Only.png" type="image/png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
-
-      <link rel="preload" as="image" href="/logo.png" />
-      <link rel="preload" as="image" href="/leah-about.jpg" />
-      <link rel="preload" as="image" href="/oliver-lucy.jpg" />
 
       <Nav />
 
