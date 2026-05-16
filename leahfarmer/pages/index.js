@@ -1,87 +1,48 @@
-import Head from 'next/head'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
+<Head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Leah Farmer — Coaching &amp; Advisory</title>
+  <meta name="description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
+  <link rel="canonical" href="https://www.leahfarmer.com/" />
 
-const COMPANIES = ['Amazon', 'Google', 'GitHub', 'EA', 'Expedia', 'Klarna', 'Stripe', 'Meta']
+  <meta property="og:title" content="Leah Farmer — Coaching &amp; Advisory" />
+  <meta property="og:description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
+  <meta property="og:image" content="https://www.leahfarmer.com/headshot.png" />
+  <meta property="og:url" content="https://www.leahfarmer.com/" />
+  <meta property="og:type" content="website" />
 
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <title>Leah Farmer — Coaching & Advisory</title>
-        <meta name="description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
-        <meta property="og:title" content="Leah Farmer — Coaching & Advisory" />
-        <meta property="og:description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
-        <meta property="og:image" content="https://leahfarmer.com/headshot.png" />
-        <meta property="og:url" content="https://leahfarmer.com" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Head>
-      <Nav />
-      {/* HERO */}
-      <section className={styles.hero}>
-        <div className={styles.heroInner}>
-          <div className={styles.heroPhoto}>
-            <img src="/headshot.png" alt="Leah Farmer" />
-          </div>
-          <div className={styles.heroContent}>
-            <h1 className={styles.heroHeadline}>
-              I build.<br />I lead.<br />I coach.
-            </h1>
-            <p className={styles.heroSubhead}>
-              Twenty-five years in tech and I'm still learning, still building, still genuinely curious about what's next. I work with companies who need a senior technical leader — and with the people inside them who want to grow.
-            </p>
-            <div className={styles.heroCtas}>
-              <a href="/fractional" className={styles.ctaBtn}>Fractional & Advisory</a>
-              <a href="/coaching" className={styles.ctaBtn}>Coaching</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* LOGO STRIP */}
-      <section className={styles.logoStrip}>
-        <p className={styles.logoLabel}>I've worked with people from:</p>
-        <div className={styles.logos}>
-          {COMPANIES.map(company => (
-            <span key={company} className={styles.logoItem}>{company}</span>
-          ))}
-        </div>
-      </section>
-      {/* PULL QUOTE */}
-      <section className={styles.quoteSection}>
-        <div className={styles.quoteInner}>
-          <blockquote className={styles.quote}>
-            "She has a keen ability to get to the core of an issue quickly, effortlessly providing clear and concise insights and new perspectives."
-          </blockquote>
-          <cite className={styles.quoteAttrib}>— Mark Holleman, Co-Founder & CEO, Thred</cite>
-        </div>
-      </section>
-      {/* MID CTA */}
-      <section className={styles.midCta}>
-        <div className={styles.midCtaInner}>
-          <div className={styles.midCtaCard}>
-            <h3>Looking for a fractional leader or advisor?</h3>
-            <p>I work alongside founders and investors as a senior product and technology executive.</p>
-            <a href="/fractional" className={styles.ctaBtn}>Fractional & Advisory →</a>
-          </div>
-          <div className={styles.midCtaCard}>
-            <h3>Looking for a coach?</h3>
-            <p>I work with builders in tech — PMs, engineers, designers, and leaders — who want to grow.</p>
-            <a href="/coaching" className={styles.ctaBtn}>Coaching →</a>
-          </div>
-        </div>
-      </section>
-      {/* PEP TALK */}
-      <section className={styles.pepTalk}>
-        <div className={styles.pepTalkInner}>
-          <p className={styles.pepTalkEyebrow}>Something I made</p>
-          <h2 className={styles.pepTalkTitle}>Sometimes you just need a pep talk.</h2>
-          <p className={styles.pepTalkBody}>Some days are just hard. Sometimes you don't need advice — you need someone to see you clearly and say the true thing with warmth. I built a little tool that does exactly that. Free. Takes two minutes. Written just for you.</p>
-          <a href="https://needapeptalk.com" target="_blank" rel="noopener" className={styles.pepTalkCta}>Get a pep talk →</a>
-        </div>
-      </section>
-      <Footer />
-    </>
-  )
-}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leah Farmer — Coaching &amp; Advisory" />
+  <meta name="twitter:description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
+  <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
+
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Leah Farmer",
+      "url": "https://www.leahfarmer.com",
+      "image": "https://www.leahfarmer.com/headshot.png",
+      "jobTitle": "Fractional CPTO & ICF PCC Executive Coach",
+      "description": "Senior technology executive and ICF PCC-certified coach with 25 years building products and leading teams at Amazon, Expedia, and two Sequoia-backed startups.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cardiff",
+        "addressRegion": "Wales",
+        "addressCountry": "GB"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/leahfarmer",
+        "https://instagram.com/leahfarmercoaching",
+        "https://leahfarmer.substack.com",
+        "https://open.spotify.com/show/5E8h0h6ksFjHrIgSujT6oK"
+      ]
+    })}}
+  />
+
+  <link rel="icon" href="/LFCA Logo Only.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</Head>
