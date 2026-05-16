@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import styles from '../styles/Home.module.css'
@@ -53,7 +54,14 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div className={styles.heroPhoto}>
-            <img src="/headshot.png" alt="Leah Farmer" />
+            <Image
+              src="/headshot.png"
+              alt="Leah Farmer"
+              width={500}
+              height={500}
+              priority
+              style={{ width: '100%', height: 'auto' }}
+            />
           </div>
           <div className={styles.heroContent}>
             <h1 className={styles.heroHeadline}>
