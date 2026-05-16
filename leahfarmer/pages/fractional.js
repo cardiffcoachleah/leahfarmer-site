@@ -7,20 +7,49 @@ export default function Fractional() {
   return (
     <>
       <Head>
-        <title>Fractional & Advisory — Leah Farmer</title>
-        <meta name="description" content="Fractional CPO/CPTO, product due diligence for VCs and PEs, and team interventions for companies building in tech." />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Fractional CPO &amp; Product Advisory — Leah Farmer</title>
+        <meta name="description" content="Fractional CPO/CPTO, product due diligence for VCs and PEs, and team interventions. 25 years at Amazon, Expedia, and Sequoia-backed startups." />
+        <link rel="canonical" href="https://www.leahfarmer.com/fractional" />
+
+        <meta property="og:title" content="Fractional CPO & Product Advisory — Leah Farmer" />
+        <meta property="og:description" content="Fractional CPO/CPTO, product due diligence for VCs and PEs, and team interventions. 25 years at Amazon, Expedia, and Sequoia-backed startups." />
+        <meta property="og:image" content="https://www.leahfarmer.com/headshot.png" />
+        <meta property="og:url" content="https://www.leahfarmer.com/fractional" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Fractional CPO & Product Advisory — Leah Farmer" />
+        <meta name="twitter:description" content="Fractional CPO/CPTO, product due diligence for VCs and PEs, and team interventions. 25 years at Amazon, Expedia, and Sequoia-backed startups." />
+        <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
+
+        <link rel="icon" href="/LFCA Logo Only.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
+
+      <link rel="preload" as="image" href="/logo.png" />
+
       <Nav />
 
       <main className={styles.main}>
-
         <section className={styles.pageHero}>
           <div className={styles.pageHeroInner}>
-            <p className={styles.eyebrow}>Fractional & Advisory</p>
+            <p className={styles.eyebrow}>Fractional &amp; Advisory</p>
             <div className={styles.pageHeroRow}>
-              <h1 className={styles.pageTitle}>For the companies and investors<br />building in tech</h1>
-              <a href="https://calendly.com/lfcoaching/free-discovery-call" className={styles.heroCtaRound} target="_blank" rel="noopener">
-                Let's<br />talk
+              <h1 className={styles.pageTitle}>
+                For the companies and investors<br />
+                building in tech
+              </h1>
+              <a
+                href="https://calendly.com/lfcoaching/free-discovery-call"
+                className={styles.heroCtaRound}
+                target="_blank"
+                rel="noopener"
+              >
+                Let&apos;s<br />talk
               </a>
             </div>
           </div>
@@ -28,9 +57,13 @@ export default function Fractional() {
 
         <section className={styles.section}>
           <div className={styles.prose}>
-            <p>VCs are good at technical due diligence. They'll tell you if the architecture is sound, if the team can ship, if the code is a mess. What they rarely do well is product due diligence — whether the thing being built is the right thing, whether the roadmap reflects real customer understanding, whether the product leader knows the difference between a strategy and a list of features.</p>
-            <p>That's the gap I work in.</p>
-            <p>I've spent 25 years building and leading product and technology at companies including Amazon, Expedia, and two Sequoia-backed startups. I know what good looks like. I know what it looks like when a founding team is talented but building in the wrong direction. And I can usually tell the difference faster than most people in the room.</p>
+            <p>
+              VCs are good at technical due diligence. They&apos;ll tell you if the architecture is sound, if the team can ship, if the code is a mess. What they rarely do well is product due diligence — whether the thing being built is the right thing, whether the roadmap reflects real customer understanding, whether the product leader knows the difference between a strategy and a list of features.
+            </p>
+            <p>That&apos;s the gap I work in.</p>
+            <p>
+              I&apos;ve spent 25 years building and leading product and technology at companies including Amazon, Expedia, and two Sequoia-backed startups. I know what good looks like. I know what it looks like when a founding team is talented but building in the wrong direction. And I can usually tell the difference faster than most people in the room.
+            </p>
             <p>I work with companies and investors in three ways:</p>
           </div>
         </section>
@@ -38,25 +71,36 @@ export default function Fractional() {
         <section className={styles.section}>
           <div className={styles.pillarsWrap}>
             <div className={styles.pillars}>
-
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Fractional Leadership</h2>
-                <p>Some companies need a senior product and technology leader but aren't ready — or don't need — a full-time hire. I come in as your CPO, CPTO, or VP Product. One day a week, two days, three — whatever the company needs.</p>
-                <p>I work alongside your founders and leadership team to build strategy, define roadmap direction, grow your product function, and get your builders aligned and moving. I bring 25 years of operator experience — not theory.</p>
-                <p className={styles.serviceNote}>Currently serving as fractional CPTO at a travel startup. Open to one additional engagement.</p>
+                <p>
+                  Some companies need a senior product and technology leader but aren&apos;t ready — or don&apos;t need — a full-time hire. I come in as your CPO, CPTO, or VP Product. One day a week, two days, three — whatever the company needs.
+                </p>
+                <p>
+                  I work alongside your founders and leadership team to build strategy, define roadmap direction, grow your product function, and get your builders aligned and moving. I bring 25 years of operator experience — not theory.
+                </p>
+                <p className={styles.serviceNote}>
+                  Currently serving as fractional CPTO at a travel startup. Open to one additional engagement.
+                </p>
               </div>
-
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Product Advisory</h2>
-                <p>For VCs, PEs, and founders: technical due diligence tells you if the architecture is sound. Product due diligence tells you if the company is building the right thing — and that question doesn't get asked nearly enough.</p>
-                <p>While your CTO advisor is looking at the code and the infrastructure, I'm looking at the roadmap, the customer understanding, the product strategy, and whether the person leading it actually knows what they're doing.</p>
-                <p>It's not a replacement for technical due diligence. It's what sits alongside it.</p>
+                <p>
+                  For VCs, PEs, and founders: technical due diligence tells you if the architecture is sound. Product due diligence tells you if the company is building the right thing — and that question doesn&apos;t get asked nearly enough.
+                </p>
+                <p>
+                  While your CTO advisor is looking at the code and the infrastructure, I&apos;m looking at the roadmap, the customer understanding, the product strategy, and whether the person leading it actually knows what they&apos;re doing.
+                </p>
+                <p>It&apos;s not a replacement for technical due diligence. It&apos;s what sits alongside it.</p>
               </div>
-
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Team Interventions</h2>
-                <p>Sometimes a team is stuck. Communication has broken down, burnout is spreading, or nobody can agree on how to work together. Because I've both led teams and coached the people on them, I can diagnose what's actually going on — and help fix it.</p>
-                <p>These engagements are customised to what the team needs. They might be a single workshop, a series of sessions, or a combination of team work and individual coaching. Things I work on:</p>
+                <p>
+                  Sometimes a team is stuck. Communication has broken down, burnout is spreading, or nobody can agree on how to work together. Because I&apos;ve both led teams and coached the people on them, I can diagnose what&apos;s actually going on — and help fix it.
+                </p>
+                <p>
+                  These engagements are customised to what the team needs. They might be a single workshop, a series of sessions, or a combination of team work and individual coaching. Things I work on:
+                </p>
                 <ul className={styles.pillarList}>
                   <li>Burnout recognition and recovery</li>
                   <li>Working Genius team mapping</li>
@@ -66,7 +110,6 @@ export default function Fractional() {
                   <li>Team alignment and shared vision</li>
                 </ul>
               </div>
-
             </div>
           </div>
         </section>
@@ -74,12 +117,19 @@ export default function Fractional() {
         <section className={styles.ctaSection}>
           <div className={styles.ctaInner}>
             <h2>Not sure which fits?</h2>
-            <p>Most good engagements start with a conversation. Get in touch and we'll figure it out together.</p>
-            <a href="https://calendly.com/lfcoaching/free-discovery-call" className={styles.ctaButton} target="_blank" rel="noopener">Book a call</a>
+            <p>Most good engagements start with a conversation. Get in touch and we&apos;ll figure it out together.</p>
+            <a
+              href="https://calendly.com/lfcoaching/free-discovery-call"
+              className={styles.ctaButton}
+              target="_blank"
+              rel="noopener"
+            >
+              Book a call
+            </a>
           </div>
         </section>
-
       </main>
+
       <Footer />
     </>
   )
