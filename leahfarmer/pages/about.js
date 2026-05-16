@@ -80,7 +80,6 @@ export default function About() {
                   alt="Oliver and Lucy"
                   width={600}
                   height={400}
-                  style={{ width: '100%', height: 'auto' }}
                 />
                 <p>
                   I have two cats, Oliver and Lucy. I love books — fiction, nonfiction, business, all of it. I write, I journal, I follow the moon. I&apos;m drawn to the mystical and the intentional. I meditate. I set intentions. I believe there&apos;s more going on than most spreadsheets account for.
