@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import styles from '../styles/Page.module.css'
@@ -73,10 +74,12 @@ export default function Coaching() {
                 </div>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', borderLeft: '1px solid rgba(14, 178, 205, 0.2)', paddingLeft: '2rem' }}>
-                <img
+                <Image
                   src="/TPR Logo Round.png"
                   alt="The Product Room"
-                  style={{ width: '120px', height: '120px', borderRadius: '50%', marginBottom: '1rem' }}
+                  width={120}
+                  height={120}
+                  style={{ borderRadius: '50%', marginBottom: '1rem' }}
                 />
                 <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', lineHeight: '1.5', marginBottom: '1.25rem' }}>
                   Looking for community?
