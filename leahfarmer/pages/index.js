@@ -30,36 +30,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width" />
         <title>Leah Farmer — Coaching &amp; Advisory</title>
         <meta name="description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
         <link rel="canonical" href="https://www.leahfarmer.com/" />
-
         <meta property="og:title" content="Leah Farmer — Coaching & Advisory" />
         <meta property="og:description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
         <meta property="og:image" content="https://www.leahfarmer.com/headshot.png" />
         <meta property="og:url" content="https://www.leahfarmer.com/" />
         <meta property="og:type" content="website" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Leah Farmer — Coaching & Advisory" />
         <meta name="twitter:description" content="Twenty-five years in tech. I work with companies who need a senior technical leader and with the people inside them who want to grow." />
         <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-
-        <link rel="icon" href="/LFCA Logo Only.png" type="image/png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
-
-      <link rel="preload" as="image" href="/logo.png" />
-      <link rel="preload" as="image" href="/headshot.png" />
 
       <Nav />
 
