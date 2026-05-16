@@ -7,31 +7,19 @@ export default function Coaching() {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width" />
         <title>Coaching for Tech Leaders — Leah Farmer</title>
         <meta name="description" content="ICF PCC-certified coaching for product managers, engineers, designers, founders, and leaders in tech. Based in Cardiff, working globally." />
         <link rel="canonical" href="https://www.leahfarmer.com/coaching" />
-
         <meta property="og:title" content="Coaching for Tech Leaders — Leah Farmer" />
         <meta property="og:description" content="ICF PCC-certified coaching for product managers, engineers, designers, founders, and leaders in tech. Based in Cardiff, working globally." />
         <meta property="og:image" content="https://www.leahfarmer.com/headshot.png" />
         <meta property="og:url" content="https://www.leahfarmer.com/coaching" />
         <meta property="og:type" content="website" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Coaching for Tech Leaders — Leah Farmer" />
         <meta name="twitter:description" content="ICF PCC-certified coaching for product managers, engineers, designers, founders, and leaders in tech. Based in Cardiff, working globally." />
         <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
-
-        <link rel="icon" href="/LFCA Logo Only.png" type="image/png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
-
-      <link rel="preload" as="image" href="/logo.png" />
-      <link rel="preload" as="image" href="/TPR Logo Round.png" />
 
       <Nav />
 
