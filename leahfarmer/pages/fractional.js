@@ -7,30 +7,19 @@ export default function Fractional() {
   return (
     <>
       <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width" />
         <title>Fractional CPO &amp; Product Advisory — Leah Farmer</title>
         <meta name="description" content="Fractional CPO/CPTO, product due diligence for VCs and PEs, and team interventions. 25 years at Amazon, Expedia, and Sequoia-backed startups." />
         <link rel="canonical" href="https://www.leahfarmer.com/fractional" />
-
         <meta property="og:title" content="Fractional CPO & Product Advisory — Leah Farmer" />
         <meta property="og:description" content="Fractional CPO/CPTO, product due diligence for VCs and PEs, and team interventions. 25 years at Amazon, Expedia, and Sequoia-backed startups." />
         <meta property="og:image" content="https://www.leahfarmer.com/headshot.png" />
         <meta property="og:url" content="https://www.leahfarmer.com/fractional" />
         <meta property="og:type" content="website" />
-
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Fractional CPO & Product Advisory — Leah Farmer" />
         <meta name="twitter:description" content="Fractional CPO/CPTO, product due diligence for VCs and PEs, and team interventions. 25 years at Amazon, Expedia, and Sequoia-backed startups." />
         <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
-
-        <link rel="icon" href="/LFCA Logo Only.png" type="image/png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
       </Head>
-
-      <link rel="preload" as="image" href="/logo.png" />
 
       <Nav />
 
