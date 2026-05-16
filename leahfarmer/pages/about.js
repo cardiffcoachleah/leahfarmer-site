@@ -75,12 +75,7 @@ export default function About() {
                 I grew up in California but New Mexico is where I lived the longest and it still feels like home. I miss the skies and the green chilli more than I can explain. I learned to swim in the Caribbean — my parents were missionaries and Honduras was part of my early life. Water has felt like home ever since.
               </p>
               <div className={styles.catsRow}>
-                <Image
-                  src="/oliver-lucy.jpg"
-                  alt="Oliver and Lucy"
-                  width={600}
-                  height={400}
-                />
+                <img src="/oliver-lucy.jpg" alt="Oliver and Lucy" />
                 <p>
                   I have two cats, Oliver and Lucy. I love books — fiction, nonfiction, business, all of it. I write, I journal, I follow the moon. I&apos;m drawn to the mystical and the intentional. I meditate. I set intentions. I believe there&apos;s more going on than most spreadsheets account for.
                 </p>
