@@ -53,7 +53,7 @@ export default function Intake() {
 
           <form onSubmit={handleSubmit} className={styles.form}>
 
-            {/* BILLING INFO */}
+            {/* ABOUT YOU */}
             <div className={styles.fieldGroup}>
               <p className={styles.groupLabel}>About you</p>
 
@@ -76,20 +76,32 @@ export default function Intake() {
                   <input className={styles.input} id="phone" type="tel" name="phone" />
                 </div>
                 <div className={styles.field}>
-                  <label className={styles.label} htmlFor="location">City, country & postal code <span className={styles.required}>*</span><span className={styles.hint}> — required for billing</span></label>
-                  <input className={styles.input} id="location" type="text" name="location" required />
+                  <label className={styles.label} htmlFor="city">City <span className={styles.required}>*</span></label>
+                  <input className={styles.input} id="city" type="text" name="city" required />
+                </div>
+              </div>
+
+              <div className={styles.fieldRow}>
+                <div className={styles.field}>
+                  <label className={styles.label} htmlFor="country">Country <span className={styles.required}>*</span></label>
+                  <input className={styles.input} id="country" type="text" name="country" required />
+                </div>
+                <div className={styles.field}>
+                  <label className={styles.label} htmlFor="postal">Postal / zip code <span className={styles.required}>*</span><span className={styles.hint}> — required for billing</span></label>
+                  <input className={styles.input} id="postal" type="text" name="postal" required />
                 </div>
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label} htmlFor="role">Current role and where you work <span className={styles.required}>*</span></label>
-                <input className={styles.input} id="role" type="text" name="role" placeholder="e.g. Senior PM at Acme, or Founder of a seed-stage startup" required />
+                <label className={styles.label} htmlFor="role">Current role and where you work</label>
+                <p className={styles.fieldHint}>If applicable.</p>
+                <input className={styles.input} id="role" type="text" name="role" placeholder="e.g. Senior PM at Acme, or Founder of a seed-stage startup" />
               </div>
             </div>
 
             <div className={styles.divider} />
 
-            {/* COACHING CONTEXT */}
+            {/* WHAT'S GOING ON */}
             <div className={styles.fieldGroup}>
               <p className={styles.groupLabel}>What's going on</p>
 
@@ -118,7 +130,7 @@ export default function Intake() {
 
             {/* GOALS */}
             <div className={styles.fieldGroup}>
-              <p className={styles.groupLabel}>Where you're headed</p>
+              <p className={styles.groupLabel}>Where you want to go</p>
 
               <div className={styles.field}>
                 <label className={styles.label} htmlFor="goals12">What does success look like for you in the next 12 months? <span className={styles.required}>*</span></label>
@@ -132,25 +144,25 @@ export default function Intake() {
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label} htmlFor="obstacles">What's getting in the way of where you want to be?</label>
-                <textarea className={styles.textarea} id="obstacles" name="obstacles" rows={4} />
+                <label className={styles.label} htmlFor="obstacles">What's getting in the way of where you want to be? <span className={styles.required}>*</span></label>
+                <textarea className={styles.textarea} id="obstacles" name="obstacles" rows={4} required />
               </div>
             </div>
 
             <div className={styles.divider} />
 
-            {/* SELF AWARENESS */}
+            {/* THE REST */}
             <div className={styles.fieldGroup}>
-              <p className={styles.groupLabel}>You, honestly</p>
+              <p className={styles.groupLabel}>A bit more</p>
 
               <div className={styles.field}>
-                <label className={styles.label} htmlFor="strengths">What are you bringing to this? What do you consider your strengths?</label>
-                <textarea className={styles.textarea} id="strengths" name="strengths" rows={4} />
+                <label className={styles.label} htmlFor="strengths">What do you consider your strengths? <span className={styles.required}>*</span></label>
+                <textarea className={styles.textarea} id="strengths" name="strengths" rows={4} required />
               </div>
 
               <div className={styles.field}>
-                <label className={styles.label} htmlFor="growth">Where do you most want to grow?</label>
-                <textarea className={styles.textarea} id="growth" name="growth" rows={4} />
+                <label className={styles.label} htmlFor="growth">Where do you most want to grow? <span className={styles.required}>*</span></label>
+                <textarea className={styles.textarea} id="growth" name="growth" rows={4} required />
               </div>
 
               <div className={styles.field}>
