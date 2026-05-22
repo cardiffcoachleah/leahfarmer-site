@@ -196,11 +196,13 @@
   color: #ff6b6b;
 }
 
-/* SUBMIT */
+/* SUBMIT ROW */
 .submitRow {
   padding-top: 2.5rem;
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
 .submitBtn {
@@ -227,6 +229,26 @@
 .submitBtn:disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+.printBtn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: transparent;
+  color: rgba(255,255,255,0.6);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.printBtn:hover {
+  color: #FFFFFF;
+  border-color: rgba(255,255,255,0.5);
 }
 
 /* SUCCESS */
@@ -257,4 +279,28 @@
   .formWrap { padding: 3rem 1.25rem 5rem; }
   .fieldRow { grid-template-columns: 1fr; }
   .checkboxGrid { grid-template-columns: 1fr; }
+}
+
+/* PRINT STYLES */
+@media print {
+  .main { padding-top: 0; background: white; }
+  .formWrap { padding: 1rem; max-width: 100%; }
+  .formTitle { color: #000; font-size: 1.8rem; }
+  .eyebrow { color: #067181; }
+  .formIntro { color: #333; }
+  .groupLabel { color: #067181; }
+  .label { color: #000; }
+  .fieldHint { color: #666; }
+  .hint { color: #666; }
+  .divider { background: #ccc; }
+  .input, .textarea {
+    border: 1px solid #999;
+    background: white;
+    color: #000;
+    -webkit-print-color-adjust: exact;
+  }
+  .checkboxLabel { color: #000; }
+  .checkbox { border-color: #999; }
+  .checkbox:checked { background: #067181; }
+  .submitRow { display: none; }
 }
