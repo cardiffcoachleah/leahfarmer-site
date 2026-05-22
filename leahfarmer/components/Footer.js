@@ -33,6 +33,8 @@ export default function Footer() {
         <span>Cardiff, Wales</span>
         <span>·</span>
         <a href="/privacy">Privacy Policy</a>
+        <span>·</span>
+        <a href="https://thelaunchbyleah.com" target="_blank" rel="noopener">The Launch by Leah</a>
       </div>
     </footer>
   )
