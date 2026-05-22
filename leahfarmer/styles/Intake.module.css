@@ -65,7 +65,7 @@
 
 .divider {
   height: 1px;
-  background: rgba(6, 113, 129, 0.5);
+  background: rgba(14, 178, 205, 0.3);
   margin: 0;
 }
 
@@ -85,7 +85,7 @@
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.95);
   line-height: 1.4;
 }
 
@@ -102,15 +102,15 @@
 .fieldHint {
   font-family: var(--font-body);
   font-size: 0.88rem;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.5);
   margin: 0;
   line-height: 1.5;
 }
 
 .input,
 .textarea {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(14,178,205,0.25);
+  background: rgba(255,255,255,0.05);
+  border: 1.5px solid rgba(14,178,205,0.5);
   border-radius: 2px;
   padding: 0.85rem 1rem;
   font-family: var(--font-body);
@@ -125,12 +125,12 @@
 .input:focus,
 .textarea:focus {
   border-color: #0EB2CD;
-  background: rgba(14,178,205,0.05);
+  background: rgba(14,178,205,0.07);
 }
 
 .input::placeholder,
 .textarea::placeholder {
-  color: rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.3);
 }
 
 .textarea {
@@ -152,7 +152,7 @@
   gap: 0.75rem;
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.85);
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -163,7 +163,7 @@
   appearance: none;
   width: 18px;
   height: 18px;
-  border: 1px solid rgba(14,178,205,0.4);
+  border: 1.5px solid rgba(14,178,205,0.6);
   border-radius: 2px;
   background: transparent;
   cursor: pointer;
