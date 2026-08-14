@@ -120,13 +120,13 @@ export default function Home() {
 
       <section className={styles.pepTalk}>
         <div className={styles.pepTalkInner}>
-          <p className={styles.pepTalkEyebrow}>Something I made</p>
-          <h2 className={styles.pepTalkTitle}>Sometimes you just need a pep talk.</h2>
+          <p className={styles.pepTalkEyebrow}>Try something new</p>
+          <h2 className={styles.pepTalkTitle}>Sometimes the head needs the body to catch up.</h2>
           <p className={styles.pepTalkBody}>
-            Some days are just hard. Sometimes you don&apos;t need advice — you need someone to see you clearly and say the true thing with warmth. I built a little tool that does exactly that. Free. Takes two minutes. Written just for you.
+            EFT tapping works on the stress response directly, which is why a knot you have been talking around for months can shift inside a single session. I&apos;m finishing my final certification hours, so private one-to-one sessions are half price for now.
           </p>
-          <a href="https://needapeptalk.com" target="_blank" rel="noopener" className={styles.pepTalkCta}>
-            Get a pep talk →
+          <a href="/eft" className={styles.pepTalkCta}>
+            Book an EFT session →
           </a>
         </div>
       </section>
