@@ -367,3 +367,22 @@
   .serviceNumber { display: none; }
   .serviceTitle, .service p { grid-column: 1; }
 }
+
+/* ── PILLAR DEEP-DIVE LINK ──────────────────── */
+.pillarLink {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #0EB2CD;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(14, 178, 205, 0.35);
+  padding-bottom: 2px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.pillarLink:hover {
+  color: #6AE8A4;
+  border-bottom-color: #6AE8A4;
+}
