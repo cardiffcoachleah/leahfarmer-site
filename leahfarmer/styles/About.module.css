@@ -173,3 +173,49 @@
     width: 100%;
   }
 }
+
+/* ── SUBPAGE CARDS (CV / What I'm building) ─── */
+.subpages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.subpageCard {
+  display: block;
+  background: #00001A;
+  border: 2px solid #067181;
+  padding: 2rem;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.15s;
+}
+
+.subpageCard:hover { border-color: #0EB2CD; transform: translateY(-2px); }
+
+.subpageEyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 0.6rem;
+}
+
+.subpageTitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0EB2CD;
+  margin-bottom: 0.6rem;
+}
+
+.subpageBody {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.75);
+}
+
+@media (max-width: 900px) {
+  .subpages { grid-template-columns: 1fr; }
+}
