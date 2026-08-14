@@ -1,0 +1,312 @@
+/* Eft.module.css — distraction-free landing page at /eft
+   Mirrors Page.module.css conventions. Left-justified throughout.
+   Header is the real logo, links back to the homepage, no nav links. */
+
+.main {
+  padding-top: 0;
+  background: #00001A;
+}
+
+/* ── HEADER (logo only, links home) ─────────── */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 3rem;
+  background: rgba(0, 0, 26, 0.97);
+  border-bottom: 1px solid rgba(14, 178, 205, 0.25);
+}
+
+.logo { display: flex; align-items: center; }
+
+.logoImg {
+  height: 110px;
+  width: auto;
+  display: block;
+}
+
+/* ── HERO ───────────────────────────────────── */
+.pageHero {
+  padding: 3rem 4rem;
+  background: #00001A;
+  border-bottom: 2px solid #067181;
+}
+
+.pageHeroInner { max-width: 1100px; margin: 0 auto; }
+
+.pageHeroRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0EB2CD;
+  margin-bottom: 1rem;
+}
+
+.pageTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: #FFFFFF;
+}
+
+.pageTitle em {
+  font-style: italic;
+  color: #0EB2CD;
+}
+
+.heroCtaRound {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #0EB2CD;
+  color: #00001A;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  outline: 2px solid rgba(255,255,255,0.35);
+  outline-offset: 4px;
+  transition: background 0.2s, transform 0.15s, outline-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.heroCtaRound:hover {
+  background: #6AE8A4;
+  outline-color: rgba(255,255,255,0.7);
+  transform: scale(1.05);
+}
+
+/* ── SECTIONS ───────────────────────────────── */
+.section {
+  padding: 3rem 4rem;
+  background: #00001A;
+  border-bottom: 1px solid #067181;
+}
+
+.sectionLast {
+  padding: 3rem 4rem;
+  background: #00001A;
+}
+
+.sectionInner { max-width: 900px; margin: 0 auto; }
+
+.sectionTitleTeal {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0EB2CD;
+  margin-bottom: 2rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── PROSE ──────────────────────────────────── */
+.prose { max-width: 700px; }
+
+.prose p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.25rem;
+}
+
+.prose p:last-child { margin-bottom: 0; }
+
+.proseEmphasis { color: #FFFFFF !important; }
+
+/* ── DASH LIST ──────────────────────────────── */
+.dashList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 700px;
+}
+
+.dashList li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.8);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.dashList li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #0EB2CD;
+  font-weight: 500;
+}
+
+/* ── PRICING ────────────────────────────────── */
+.priceBlock {
+  border: 2px solid #067181;
+  padding: 2.5rem 3rem;
+  max-width: 700px;
+  display: flex;
+  align-items: baseline;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.priceWas {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  color: rgba(255,255,255,0.45);
+  text-decoration: line-through;
+  text-decoration-color: #0EB2CD;
+  text-decoration-thickness: 2px;
+}
+
+.priceAmount {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.priceNote {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #0EB2CD;
+}
+
+.priceDetail {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.8);
+  max-width: 700px;
+  margin-top: 1.5rem;
+}
+
+/* ── EXPECTATIONS ───────────────────────────── */
+.expectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 900px;
+}
+
+.expectCard {
+  background: #00001A;
+  border: 2px solid #067181;
+  padding: 2.5rem 2rem;
+}
+
+.expectTitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0EB2CD;
+  margin-bottom: 0.75rem;
+}
+
+.expectBody {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ── BOOKING ────────────────────────────────── */
+.calendlyWrap { max-width: 900px; }
+
+.calendlyEmbed {
+  min-width: 320px;
+  height: 700px;
+}
+
+.bookingNote {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.7);
+  max-width: 700px;
+  margin-top: 1.75rem;
+}
+
+.bookingNote a {
+  color: #0EB2CD;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(14,178,205,0.3);
+  transition: border-color 0.2s;
+}
+
+.bookingNote a:hover { border-color: #0EB2CD; }
+
+/* ── BUTTON ─────────────────────────────────── */
+.button {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: #0EB2CD;
+  color: #00001A;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.button:hover { background: #6AE8A4; transform: translateY(-2px); }
+
+/* ── SMALL PRINT ────────────────────────────── */
+.smallPrint {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.55);
+  max-width: 700px;
+}
+
+/* ── FOOTER ─────────────────────────────────── */
+.footer {
+  padding: 2rem 4rem;
+  border-top: 2px solid #0EB2CD;
+}
+
+.footer p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+.footer a:hover { color: #0EB2CD; }
+
+/* ── RESPONSIVE ─────────────────────────────── */
+@media (max-width: 900px) {
+  .header { padding: 0.4rem 1rem; }
+  .logoImg { height: 70px; }
+  .pageHero, .section, .sectionLast, .footer { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .pageHeroRow { flex-direction: column; }
+  .heroCtaRound { width: 110px; height: 110px; font-size: 0.82rem; }
+  .expectGrid { grid-template-columns: 1fr; }
+  .priceBlock { padding: 2rem 1.5rem; }
+  .priceAmount { font-size: 3.2rem; }
+}
