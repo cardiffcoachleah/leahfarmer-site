@@ -37,7 +37,7 @@ export default function CV() {
                 <h1 className={styles.pageTitle}>Leah Farmer</h1>
               </div>
               <div className={styles.heroActions}>
-                <a href="/LeahFarmer-CV.pdf" className={styles.ghostButton} target="_blank" rel="noopener">
+                <a href="/LeahFarmer-CV.pdf" className={styles.ghostButton} download>
                   Download PDF →
                 </a>
                 <a href="https://linkedin.com/in/leahfarmer" className={styles.ghostButton} target="_blank" rel="noopener">
