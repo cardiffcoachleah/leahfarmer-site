@@ -71,6 +71,9 @@ export default function Fractional() {
                 <p className={styles.serviceNote}>
                   Currently serving as fractional CPTO at a travel startup. Open to one additional engagement.
                 </p>
+                <a href="/fractional-cpo" className={styles.pillarLink}>
+                  How fractional engagements work &#8594;
+                </a>
               </div>
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Product Advisory</h2>
@@ -81,6 +84,9 @@ export default function Fractional() {
                   While your CTO advisor is looking at the code and the infrastructure, I&apos;m looking at the roadmap, the customer understanding, the product strategy, and whether the person leading it actually knows what they&apos;re doing.
                 </p>
                 <p>It&apos;s not a replacement for technical due diligence. It&apos;s what sits alongside it.</p>
+                <a href="/product-due-diligence" className={styles.pillarLink}>
+                  What product due diligence covers &#8594;
+                </a>
               </div>
               <div className={styles.pillar}>
                 <h2 className={styles.pillarTitle}>Team Interventions</h2>
