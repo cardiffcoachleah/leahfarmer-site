@@ -66,6 +66,25 @@ export default function About() {
 
             <div className={styles.divider} />
 
+            <div className={styles.subpages}>
+              <a href="/about/cv" className={styles.subpageCard}>
+                <p className={styles.subpageEyebrow}>The long version</p>
+                <p className={styles.subpageTitle}>My CV &#8594;</p>
+                <p className={styles.subpageBody}>
+                  Twenty-five years, the roles, the numbers, the credentials.
+                </p>
+              </a>
+              <a href="/about/what-im-building" className={styles.subpageCard}>
+                <p className={styles.subpageEyebrow}>Still shipping</p>
+                <p className={styles.subpageTitle}>What I&apos;m building &#8594;</p>
+                <p className={styles.subpageBody}>
+                  The tools and studios I&apos;ve built and run alongside the client work.
+                </p>
+              </a>
+            </div>
+
+            <div className={styles.divider} />
+
             <div className={styles.human}>
               <h2 className={styles.humanTitle}>Beyond the work</h2>
               <p>
