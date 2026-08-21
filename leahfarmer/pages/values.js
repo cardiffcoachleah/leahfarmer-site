@@ -27,10 +27,11 @@ const VALUES = [
 ]
 
 export default function Values() {
-  const [selected, setSelected] = useState([])
-  const [final, setFinal] = useState([])
-  const [own, setOwn] = useState([])
-  const [name, setName] = useState('')
+  // One object, updated functionally. Separate useState arrays drop clicks:
+  // React batches updates, so rapid clicks all read the same stale array
+  // and only the last one survives. Fast clicking is the whole first pass.
+  const [data, setData] = useState({ selected: [], final: [], own: [], name: '' })
+  const { selected, final, own, name } = data
   const [ownInput, setOwnInput] = useState('')
   const [loaded, setLoaded] = useState(false)
   const [copyLabel, setCopyLabel] = useState('Copy my list')
@@ -44,10 +45,12 @@ export default function Values() {
       const raw = window.localStorage.getItem(STORAGE_KEY)
       if (raw) {
         const d = JSON.parse(raw)
-        if (Array.isArray(d.selected)) setSelected(d.selected)
-        if (Array.isArray(d.final)) setFinal(d.final)
-        if (Array.isArray(d.own)) setOwn(d.own)
-        if (typeof d.name === 'string') setName(d.name)
+        setData({
+          selected: Array.isArray(d.selected) ? d.selected : [],
+          final: Array.isArray(d.final) ? d.final : [],
+          own: Array.isArray(d.own) ? d.own : [],
+          name: typeof d.name === 'string' ? d.name : ''
+        })
       }
     } catch (e) {
       // Private browsing or storage disabled. The exercise still works, it just will not persist.
@@ -59,17 +62,14 @@ export default function Values() {
   useEffect(() => {
     if (!loaded) return
     try {
-      window.localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify({ selected, final, own, name })
-      )
+      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
       setSavedFlash(true)
       clearTimeout(flashTimer.current)
       flashTimer.current = setTimeout(() => setSavedFlash(false), 1400)
     } catch (e) {
       // Nothing to do. Copy, PDF and email all still work from in-memory state.
     }
-  }, [selected, final, own, name, loaded])
+  }, [data, loaded])
 
   useEffect(() => () => clearTimeout(flashTimer.current), [])
 
@@ -77,29 +77,42 @@ export default function Values() {
 
   // One word, three states: unselected, selected, final. Clicking cycles through them.
   function toggle(word) {
-    if (final.includes(word)) {
-      setFinal(final.filter(w => w !== word))
-      setSelected(selected.filter(w => w !== word))
-    } else if (selected.includes(word)) {
-      setFinal([...final, word])
-    } else {
-      setSelected([...selected, word])
-    }
+    setData(d => {
+      if (d.final.includes(word)) {
+        return {
+          ...d,
+          final: d.final.filter(w => w !== word),
+          selected: d.selected.filter(w => w !== word)
+        }
+      }
+      if (d.selected.includes(word)) {
+        return { ...d, final: [...d.final, word] }
+      }
+      return { ...d, selected: [...d.selected, word] }
+    })
   }
 
   function remove(word) {
-    setSelected(selected.filter(w => w !== word))
-    setFinal(final.filter(w => w !== word))
+    setData(d => ({
+      ...d,
+      selected: d.selected.filter(w => w !== word),
+      final: d.final.filter(w => w !== word)
+    }))
   }
 
   function addOwn() {
     const v = ownInput.trim()
     if (!v) return
-    if (!allWords.some(w => w.toLowerCase() === v.toLowerCase())) {
-      setOwn([...own, v])
-      setSelected([...selected, v])
-    }
+    setData(d => {
+      const existing = [...VALUES, ...d.own]
+      if (existing.some(w => w.toLowerCase() === v.toLowerCase())) return d
+      return { ...d, own: [...d.own, v], selected: [...d.selected, v] }
+    })
     setOwnInput('')
+  }
+
+  function setName(value) {
+    setData(d => ({ ...d, name: value }))
   }
 
   const finalSorted = [...final].sort()
@@ -135,9 +148,7 @@ export default function Values() {
 
   function handleReset() {
     if (resetArmed) {
-      setSelected([])
-      setFinal([])
-      setOwn([])
+      setData(d => ({ selected: [], final: [], own: [], name: d.name }))
       setResetArmed(false)
     } else {
       setResetArmed(true)
@@ -361,7 +372,7 @@ export default function Values() {
 
       {/* PRINT SHEET — hidden on screen, this is what Save as PDF produces */}
       <div className={styles.printSheet} aria-hidden="true">
-        <div className={styles.pvBar}>
+        <div className={styles.pvHead}>
           <p className={styles.pvEyebrow}>Leah Farmer Coaching &amp; Advisory</p>
           <p className={styles.pvTitle}>Values Exercise</p>
           <p className={styles.pvSub}>{name ? `${name}  ·  ${printDate}` : printDate}</p>
