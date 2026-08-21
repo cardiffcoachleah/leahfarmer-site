@@ -1,0 +1,354 @@
+/* Narrative.module.css — the Professional Narrative overview and step pages.
+   Unlisted pages, so the header is the logo only and links home, same as
+   Eft.module.css. Left-justified throughout. */
+
+.main {
+  padding-top: 0;
+  background: #00001A;
+}
+
+/* ── HEADER (logo only, links home) ─────────── */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 3rem;
+  background: rgba(0, 0, 26, 0.97);
+  border-bottom: 1px solid rgba(14, 178, 205, 0.25);
+}
+
+.logo { display: flex; align-items: center; }
+
+.logoImg {
+  height: 110px;
+  width: auto;
+  display: block;
+}
+
+/* ── HERO ───────────────────────────────────── */
+.pageHero {
+  padding: 3rem 4rem;
+  background: #00001A;
+  border-bottom: 2px solid #067181;
+}
+
+.pageHeroInner { max-width: 1100px; margin: 0 auto; }
+
+.backLink {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  transition: color 0.2s;
+}
+
+.backLink:hover { color: #0EB2CD; }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #0EB2CD;
+  margin-bottom: 1rem;
+}
+
+.pageTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: #FFFFFF;
+}
+
+.pageTitle em {
+  font-style: italic;
+  color: #0EB2CD;
+}
+
+.heroLede {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.8);
+  max-width: 720px;
+  margin-top: 1.75rem;
+}
+
+/* ── SECTIONS ───────────────────────────────── */
+.section {
+  padding: 3rem 4rem;
+  background: #00001A;
+  border-bottom: 1px solid #067181;
+}
+
+.sectionLast {
+  padding: 3rem 4rem;
+  background: #00001A;
+}
+
+.sectionInner { max-width: 1100px; margin: 0 auto; }
+
+.sectionTitleTeal {
+  font-family: var(--font-body);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #0EB2CD;
+  margin-bottom: 2rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── PROSE ──────────────────────────────────── */
+.prose { max-width: 720px; }
+
+.prose p {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1.25rem;
+}
+
+.prose p:last-child { margin-bottom: 0; }
+
+.proseEmphasis { color: #FFFFFF !important; }
+
+/* ── DASH LIST ──────────────────────────────── */
+.dashList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-width: 760px;
+}
+
+.dashList li {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.8);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.dashList li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: #0EB2CD;
+  font-weight: 500;
+}
+
+.dashList strong { color: #FFFFFF; font-weight: 500; }
+
+/* ── THREE QUESTIONS ────────────────────────── */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pillar {
+  border: 2px solid #067181;
+  padding: 2.25rem 1.75rem;
+}
+
+.pillarTitle {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #0EB2CD;
+  margin-bottom: 0.85rem;
+}
+
+.pillarBody {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ── STEP LIST ──────────────────────────────── */
+.steps { display: flex; flex-direction: column; gap: 0; }
+
+.step {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1.5rem;
+  padding: 1.75rem 0;
+  border-bottom: 1px solid #067181;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.step:last-child { border-bottom: none; }
+
+.stepLink:hover .stepTitle { color: #6AE8A4; }
+
+.stepNum {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  font-weight: 300;
+  color: #067181;
+  line-height: 1;
+  padding-top: 0.15rem;
+}
+
+.stepTitle {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #0EB2CD;
+  margin-bottom: 0.4rem;
+  transition: color 0.2s;
+}
+
+.stepBody {
+  font-family: var(--font-body);
+  font-size: 0.97rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.75);
+  max-width: 680px;
+}
+
+.stepMore {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: #067181;
+  margin-top: 0.5rem;
+}
+
+.stepLink:hover .stepMore { color: #0EB2CD; }
+
+/* ── CALLOUT ────────────────────────────────── */
+.callout {
+  border: 2px solid #067181;
+  padding: 2rem 2.25rem;
+  max-width: 760px;
+}
+
+.callout p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 1rem;
+}
+
+.callout p:last-child { margin-bottom: 0; }
+
+.calloutEmphasis { color: #FFFFFF !important; }
+
+/* ── OUTPUT BOX ─────────────────────────────── */
+.outputBox {
+  border-left: 3px solid #6AE8A4;
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  max-width: 720px;
+}
+
+.outputLabel {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6AE8A4;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.outputBody {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ── CTA ────────────────────────────────────── */
+.button {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: #0EB2CD;
+  color: #00001A;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.button:hover { background: #6AE8A4; transform: translateY(-2px); }
+
+.ctaNote {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.7);
+  max-width: 700px;
+  margin-top: 1.5rem;
+}
+
+.ctaNote a {
+  color: #0EB2CD;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(14,178,205,0.3);
+  transition: border-color 0.2s;
+}
+
+.ctaNote a:hover { border-color: #0EB2CD; }
+
+/* ── NEXT / PREV ────────────────────────────── */
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.pagerLink {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #0EB2CD;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(14,178,205,0.3);
+  transition: border-color 0.2s;
+}
+
+.pagerLink:hover { border-color: #0EB2CD; }
+
+/* ── FOOTER ─────────────────────────────────── */
+.footer {
+  padding: 2rem 4rem;
+  border-top: 2px solid #0EB2CD;
+}
+
+.footer p {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.4);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer a { color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+.footer a:hover { color: #0EB2CD; }
+
+/* ── RESPONSIVE ─────────────────────────────── */
+@media (max-width: 900px) {
+  .header { padding: 0.4rem 1rem; }
+  .logoImg { height: 70px; }
+  .pageHero, .section, .sectionLast, .footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .pillars { grid-template-columns: 1fr; }
+  .step { grid-template-columns: 2.5rem 1fr; gap: 1rem; }
+  .callout { padding: 1.5rem 1.25rem; }
+}
