@@ -15,6 +15,11 @@ const STEPS = [
     body: 'We go through your career one role at a time. Not what the job was, but what you were proudest of, what you would never do again, and what you took with you. This is where your stories come from later.'
   },
   {
+    href: '/professional-narrative/values',
+    title: 'The values exercise',
+    body: 'One of the three questions your narrative answers is what you value. This is how you answer it. You work through a long list over a few days and narrow to the three to five you would not trade away, then we go looking for where each one came from.'
+  },
+  {
     href: '/professional-narrative/five-ps',
     title: 'The 5 Ps',
     body: 'Purpose, People, Passion, Progression, Pay. Five things a job has to give you, and the honest question of which ones you can live without right now.'
@@ -163,10 +168,11 @@ export default function ProfessionalNarrative() {
                 whether you want to keep going. Most people do.
               </p>
               <p>
-                Some of the work happens between sessions. You will do a{' '}
-                <a href="/values" style={{ color: '#0EB2CD' }}>values exercise</a> on your own
-                time, and you will write the first draft on your own before we look at it
-                together.
+                Two pieces of it you do on your own. The{' '}
+                <a href="/professional-narrative/values" style={{ color: '#0EB2CD' }}>values
+                exercise</a> takes a few days of thinking rather than a session, and you write
+                the first draft of the narrative before we look at it together. Both come back
+                into the room afterward.
               </p>
               <p className={styles.proseEmphasis}>
                 If you get stuck on the bigger question of what you are even good at, we can
