@@ -7,32 +7,32 @@ const STEPS = [
   {
     href: '/professional-narrative/working-genius',
     title: 'Working Genius and your problem statement',
-    body: 'We start with where your energy actually goes. You take the Six Types of Working Genius assessment, I walk you through what your results mean, and we name the thing you are trying to solve. That problem statement is the thread we pull all the way through.'
+    body: 'Where your energy actually goes, and what you are really trying to solve.'
   },
   {
     href: '/professional-narrative/cv-walkthrough',
     title: 'The CV walkthrough',
-    body: 'We go through your career one role at a time. Not what the job was, but what you were proudest of, what you would never do again, and what you took with you. This is where your stories come from later.'
+    body: 'Your career one role at a time. What you were proudest of, what you would not repeat, what you took with you.'
   },
   {
     href: '/professional-narrative/values',
     title: 'The values exercise',
-    body: 'One of the three questions your narrative answers is what you value. This is how you answer it. You work through a long list over a few days and narrow to the three to five you would not trade away, then we go looking for where each one came from.'
+    body: 'The three to five things you will not trade away, and where each one came from.'
   },
   {
     href: '/professional-narrative/five-ps',
     title: 'The 5 Ps',
-    body: 'Purpose, People, Passion, Progression, Pay. Five things a job has to give you, and the honest question of which ones you can live without right now.'
+    body: 'Purpose, People, Passion, Progression, Pay. Which ones you can live without right now.'
   },
   {
     href: '/professional-narrative/the-draft',
     title: 'Your first draft',
-    body: 'You write it. I read it, mark it up, and we work through it together until it sounds like you. Then we practice saying it out loud, because the spoken version is a different animal from the written one.'
+    body: 'You write it. We work on it until it sounds like you, then you practice saying it out loud.'
   },
   {
     href: '/professional-narrative/story-map',
     title: 'The story map',
-    body: 'I build a set of interview questions from your narrative, not from a generic bank. Then we work out which of your stories answer them, so you walk into interviews with the material already banked.'
+    body: 'The questions your narrative invites, and the stories from your own career that answer them.'
   }
 ]
 
@@ -41,9 +41,17 @@ export default function ProfessionalNarrative() {
     <>
       <Head>
         <title>The Professional Narrative — Leah Farmer</title>
-        <meta name="description" content="A framework for getting clear on what you have done, what you value, and what you want next." />
-        <meta name="robots" content="noindex, nofollow" />
+        <meta name="description" content="A framework for getting clear on what you have done, what you value, and what you want next. Six steps, built around three questions." />
         <link rel="canonical" href="https://www.leahfarmer.com/professional-narrative" />
+        <meta property="og:title" content="The Professional Narrative — Leah Farmer" />
+        <meta property="og:description" content="What you have done, what you value, what you want next. The framework I use with clients who are job hunting, stuck, or working out what comes next." />
+        <meta property="og:url" content="https://www.leahfarmer.com/professional-narrative" />
+        <meta property="og:image" content="https://www.leahfarmer.com/headshot.png" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="The Professional Narrative — Leah Farmer" />
+        <meta name="twitter:description" content="What you have done, what you value, what you want next. The framework I use with clients." />
+        <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
       </Head>
 
       <header className={styles.header}>
@@ -112,6 +120,43 @@ export default function ProfessionalNarrative() {
           </div>
         </section>
 
+        {/* THE SIX STEPS */}
+        <section className={styles.section}>
+          <div className={styles.sectionInner}>
+            <h2 className={styles.sectionTitleTeal}>Six steps to get there</h2>
+            <div className={styles.steps}>
+              {STEPS.map((step, i) => (
+                <a key={step.href} href={step.href} className={`${styles.step} ${styles.stepLink}`}>
+                  <div className={styles.stepNum}>{String(i + 1).padStart(2, '0')}</div>
+                  <div>
+                    <h3 className={styles.stepTitle}>{step.title}</h3>
+                    <p className={styles.stepBody}>{step.body}</p>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div className={styles.prose} style={{ marginTop: '2rem' }}>
+              <p>
+                Usually about six sessions. Click any step for what actually happens in it and
+                what you walk away with.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA ONE */}
+        <section className={styles.section}>
+          <div className={styles.sectionInner}>
+            <a href={CALENDLY} className={styles.button} target="_blank" rel="noopener">
+              Book a discovery call
+            </a>
+            <p className={styles.ctaNote}>
+              That is the whole framework. If you want to know how each part actually works,
+              and why it is built this way, keep reading.
+            </p>
+          </div>
+        </section>
+
         {/* YOU WRITE IT */}
         <section className={styles.section}>
           <div className={styles.sectionInner}>
@@ -128,27 +173,32 @@ export default function ProfessionalNarrative() {
                 wrestle it out of yourself.
               </p>
               <p className={styles.calloutEmphasis}>
-                That is the part that makes it work when you say it out loud to a stranger.
+                That is the part that makes it hold up when you say it out loud to a stranger.
               </p>
             </div>
           </div>
         </section>
 
-        {/* HOW WE GET THERE */}
+        {/* WHY IT IS BUILT THIS WAY */}
         <section className={styles.section}>
           <div className={styles.sectionInner}>
-            <h2 className={styles.sectionTitleTeal}>How we get there</h2>
-            <div className={styles.steps}>
-              {STEPS.map((step, i) => (
-                <a key={step.href} href={step.href} className={`${styles.step} ${styles.stepLink}`}>
-                  <div className={styles.stepNum}>{String(i + 1).padStart(2, '0')}</div>
-                  <div>
-                    <h3 className={styles.stepTitle}>{step.title}</h3>
-                    <p className={styles.stepBody}>{step.body}</p>
-                    <p className={styles.stepMore}>Read more</p>
-                  </div>
-                </a>
-              ))}
+            <h2 className={styles.sectionTitleTeal}>Why it is built in that order</h2>
+            <div className={styles.prose}>
+              <p>
+                Most career advice starts with what you want, which is the hardest question and
+                the worst place to begin. People answer it with a job title they have watched
+                someone else hold.
+              </p>
+              <p>
+                So we start behind it. Where your energy goes. What you have actually been doing
+                regardless of what your title said. What you keep walking away from. By the time
+                we get to what you want, you are answering from evidence rather than from
+                aspiration.
+              </p>
+              <p className={styles.proseEmphasis}>
+                The story map comes last for the same reason. Interview prep works when you
+                already know what you are arguing. Before that, it is just rehearsing.
+              </p>
             </div>
           </div>
         </section>
@@ -168,11 +218,11 @@ export default function ProfessionalNarrative() {
                 whether you want to keep going. Most people do.
               </p>
               <p>
-                Two pieces of it you do on your own. The{' '}
+                Two pieces of it happen on your own. The{' '}
                 <a href="/professional-narrative/values" style={{ color: '#0EB2CD' }}>values
-                exercise</a> takes a few days of thinking rather than a session, and you write
-                the first draft of the narrative before we look at it together. Both come back
-                into the room afterward.
+                exercise</a> takes a few days of thinking rather than a session, and the first
+                draft of the narrative is yours to write before we look at it together. Both
+                come back into the room afterward.
               </p>
               <p className={styles.proseEmphasis}>
                 If you get stuck on the bigger question of what you are even good at, we can
@@ -196,14 +246,15 @@ export default function ProfessionalNarrative() {
             </ul>
             <div className={styles.prose} style={{ marginTop: '2rem' }}>
               <p>
-                It also goes stale. Come back to it in two years and you will see how much has
-                moved, which is usually more interesting than the document itself.
+                It also goes stale, which is the point. Come back to it in two years and you
+                will see how much has moved. That is usually more interesting than the document
+                itself.
               </p>
             </div>
           </div>
         </section>
 
-        {/* CTA */}
+        {/* CTA TWO */}
         <section className={styles.sectionLast}>
           <div className={styles.sectionInner}>
             <h2 className={styles.sectionTitleTeal}>Where to start</h2>
@@ -217,6 +268,10 @@ export default function ProfessionalNarrative() {
               conversation either way. Email{' '}
               <a href="mailto:leah@leahfarmer.com">leah@leahfarmer.com</a> if you would rather
               ask something first.
+            </p>
+            <p className={styles.ctaNote}>
+              And if you are not looking for a coach, take the three questions and use them
+              anyway. Write a page. Read it out loud. You will learn something either way.
             </p>
           </div>
         </section>
