@@ -442,8 +442,48 @@
 }
 
 @media print {
+  /* globals.css sets a navy body background and white text for the whole site.
+     Hiding the screen view does not undo that, so navy print text lands on a
+     navy page and disappears. Force a white sheet with dark text explicitly
+     rather than trusting the browser to drop the background. */
+  :global(html),
+  :global(body) {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #00001A !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   .screen { display: none !important; }
-  .printSheet { display: block !important; }
+
+  .printSheet {
+    display: block !important;
+    background: #FFFFFF !important;
+    color: #00001A !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Restate every colour inside the print context so nothing inherits white. */
+  .pvHead { border-bottom: 3px solid #0EB2CD !important; }
+  .pvEyebrow { color: #067181 !important; }
+  .pvTitle { color: #00001A !important; }
+  .pvSub { color: #067181 !important; }
+  .pvHeading {
+    color: #067181 !important;
+    border-bottom: 1px solid #067181 !important;
+  }
+  .pvList li { color: #00001A !important; }
+  .pvList li::before { color: #0EB2CD !important; }
+  .pvInline { color: #00001A !important; }
+  .pvFoot {
+    color: #067181 !important;
+    border-top: 2px solid #0EB2CD !important;
+  }
+
+  @page { margin: 18mm; }
 }
 
 /* ── RESPONSIVE ─────────────────────────────── */
