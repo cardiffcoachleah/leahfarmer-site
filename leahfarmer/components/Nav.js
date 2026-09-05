@@ -4,6 +4,7 @@ import styles from '../styles/Nav.module.css'
 const MENUS = [
   {
     label: 'Coaching',
+    href: '/coaching',
     items: [
       { href: '/coaching', label: '1:1 Coaching' },
       { href: '/professional-narrative', label: 'Professional Narrative' },
@@ -12,6 +13,7 @@ const MENUS = [
   },
   {
     label: 'Fractional & Advisory',
+    href: '/fractional',
     items: [
       { href: '/fractional', label: 'Overview' },
       { href: '/fractional-cpo', label: 'Fractional Leadership' },
@@ -62,14 +64,21 @@ export default function Nav() {
             onMouseEnter={canHover ? () => setOpenIndex(i) : undefined}
             onMouseLeave={canHover ? () => setOpenIndex((cur) => (cur === i ? null : cur)) : undefined}
           >
-            <button
-              type="button"
-              className={styles.menuButton}
-              aria-expanded={openIndex === i}
-              aria-haspopup="true"
-              onClick={() => setOpenIndex((cur) => (cur === i ? null : i))}
+            <a
+              href={menu.href}
+              className={`${styles.menuLink} ${openIndex === i ? styles.menuLinkActive : ''}`}
             >
               {menu.label}
+            </a>
+
+            <button
+              type="button"
+              className={`${styles.caretButton} ${openIndex === i ? styles.caretButtonActive : ''}`}
+              aria-expanded={openIndex === i}
+              aria-haspopup="true"
+              aria-label={`${openIndex === i ? 'Close' : 'Open'} ${menu.label} menu`}
+              onClick={() => setOpenIndex((cur) => (cur === i ? null : i))}
+            >
               <span className={styles.caret} aria-hidden="true">&#9662;</span>
             </button>
 
