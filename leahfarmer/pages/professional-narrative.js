@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 import styles from '../styles/Narrative.module.css'
 
 const CALENDLY = 'https://calendly.com/lfcoaching/free-discovery-call'
@@ -54,11 +56,7 @@ export default function ProfessionalNarrative() {
         <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
       </Head>
 
-      <header className={styles.header}>
-        <a href="/" className={styles.logo} aria-label="Leah Farmer Coaching and Advisory, back to homepage">
-          <img src="/logo.png" alt="Leah Farmer Coaching &amp; Advisory" className={styles.logoImg} />
-        </a>
-      </header>
+      <Nav />
 
       <main className={styles.main}>
 
@@ -276,14 +274,9 @@ export default function ProfessionalNarrative() {
           </div>
         </section>
 
-        <footer className={styles.footer}>
-          <p>
-            © Leah Farmer · Cardiff, Wales · <a href="/">leahfarmer.com</a> ·{' '}
-            <a href="/privacy">Privacy Policy</a>
-          </p>
-        </footer>
-
       </main>
+
+      <Footer />
     </>
   )
 }
