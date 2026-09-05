@@ -170,6 +170,35 @@ export default function Coaching() {
           </div>
         </section>
 
+        <section className={styles.section}>
+          <div className={styles.sectionInner}>
+            <h2 className={styles.sectionTitleTeal}>Also available: EFT sessions</h2>
+            <div className={styles.prose}>
+              <p>
+                Alongside coaching I offer private EFT tapping sessions. EFT, often called
+                tapping, works on the stress response directly rather than through talking,
+                which makes it useful for the things that do not shift just because you
+                understand them. Anxiety that lives in the body. Dread before a specific
+                conversation. The wired exhaustion that comes with burnout.
+              </p>
+              <p>
+                These are separate from coaching and can be booked on their own.{' '}
+                <a
+                  href="/eft"
+                  style={{
+                    color: '#0EB2CD',
+                    textDecoration: 'none',
+                    borderBottom: '1px solid rgba(14, 178, 205, 0.4)',
+                    paddingBottom: '2px',
+                  }}
+                >
+                  Read more about EFT sessions &rarr;
+                </a>
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className={styles.ctaSection}>
           <div className={styles.ctaInner}>
             <h2>Ready to talk?</h2>
