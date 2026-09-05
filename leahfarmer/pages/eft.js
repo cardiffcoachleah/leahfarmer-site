@@ -1,8 +1,12 @@
 import Head from 'next/head'
 import Script from 'next/script'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 import styles from '../styles/Eft.module.css'
 
 const CALENDLY_EFT = 'https://calendly.com/lfcoaching/eft-tapping-60mins'
+// TODO: replace with the real Meetup group URL
+const MEETUP_URL = 'https://www.meetup.com/the-reset-room/'
 
 export default function Eft() {
   return (
@@ -22,12 +26,7 @@ export default function Eft() {
         <meta name="twitter:image" content="https://www.leahfarmer.com/headshot.png" />
       </Head>
 
-      {/* Header: logo only, no nav links. Logo returns to the homepage. */}
-      <header className={styles.header}>
-        <a href="/" className={styles.logo} aria-label="Leah Farmer Coaching and Advisory, back to homepage">
-          <img src="/logo.png" alt="Leah Farmer Coaching &amp; Advisory" className={styles.logoImg} />
-        </a>
-      </header>
+      <Nav />
 
       <main className={styles.main}>
 
@@ -108,7 +107,7 @@ export default function Eft() {
           <div className={styles.sectionInner}>
             <h2 className={styles.sectionTitleTeal}>Session pricing</h2>
             <div className={styles.priceBlock}>
-              <span className={styles.priceWas}>£80</span>
+              <span className={styles.priceWas}>£85</span>
               <span className={styles.priceAmount}>£40</span>
               <span className={styles.priceNote}>per 60 minute session</span>
             </div>
@@ -117,6 +116,29 @@ export default function Eft() {
               rate is calculated at the time of payment, so expect roughly $55 or €45
               depending on the rate that day. Sessions are online, so time zone is not a
               problem. Book them one at a time. No packages, no commitment.
+            </p>
+          </div>
+        </section>
+
+        {/* GROUP SESSIONS */}
+        <section className={styles.section}>
+          <div className={styles.sectionInner}>
+            <h2 className={styles.sectionTitleTeal}>Rather try it in a group first?</h2>
+            <div className={styles.prose} style={{ marginBottom: '1.5rem' }}>
+              <p>
+                I run online group tapping sessions through The Reset Room. Same technique,
+                guided the same way, £10 a drop in. Cameras off is normal and nobody is asked
+                to speak or share anything out loud.
+              </p>
+              <p>
+                It is a low-stakes way to find out whether this does anything for you before
+                booking a private session.
+              </p>
+            </div>
+            <p className={styles.bookingNote} style={{ marginTop: 0 }}>
+              <a href={MEETUP_URL} target="_blank" rel="noopener">
+                See upcoming sessions on Meetup
+              </a>
             </p>
           </div>
         </section>
@@ -199,15 +221,9 @@ export default function Eft() {
           </div>
         </section>
 
-        {/* FOOTER */}
-        <footer className={styles.footer}>
-          <p>
-            © Leah Farmer · Cardiff, Wales · <a href="/">leahfarmer.com</a> ·{' '}
-            <a href="/privacy">Privacy Policy</a>
-          </p>
-        </footer>
-
       </main>
+
+      <Footer />
 
       <Script
         src="https://assets.calendly.com/assets/external/widget.js"
