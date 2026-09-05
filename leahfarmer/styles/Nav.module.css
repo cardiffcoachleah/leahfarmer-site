@@ -29,7 +29,7 @@
 }
 
 .plainLink,
-.menuButton {
+.menuLink {
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
@@ -38,41 +38,47 @@
   transition: color 0.2s;
   text-decoration: none;
   white-space: nowrap;
-}
-
-.plainLink {
   display: flex;
   align-items: center;
 }
 
 .plainLink:hover,
-.menuButton:hover { color: #0EB2CD; }
+.menuLink:hover { color: #0EB2CD; }
 
 .menu {
   position: relative;
   display: flex;
   align-items: center;
+  gap: 0.15rem;
 }
 
-.menuButton {
+.menuLinkActive { color: #0EB2CD; }
+
+.caretButton {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
   background: none;
   border: 0;
-  padding: 0;
   cursor: pointer;
+  color: rgba(255,255,255,0.9);
+  transition: color 0.2s;
   -webkit-font-smoothing: antialiased;
 }
 
+.caretButton:hover { color: #0EB2CD; }
+.caretButtonActive { color: #0EB2CD; }
+
 .caret {
-  font-size: 0.7em;
+  font-size: 0.7rem;
   line-height: 1;
   transition: transform 0.2s;
 }
 
-.menuButton[aria-expanded="true"] { color: #0EB2CD; }
-.menuButton[aria-expanded="true"] .caret { transform: rotate(180deg); }
+.caretButtonActive .caret { transform: rotate(180deg); }
 
 .dropdown {
   position: absolute;
@@ -109,9 +115,10 @@
 @media (max-width: 768px) {
   .nav { padding: 0.4rem 1rem; }
   .logoImg { height: 70px; }
-  .links { gap: 0.85rem; }
-  .plainLink, .menuButton { font-size: 0.8rem; }
-  .menuButton { gap: 0.25rem; }
+  .links { gap: 0.7rem; }
+  .plainLink, .menuLink { font-size: 0.8rem; }
+  .menu { gap: 0; }
+  .caretButton { width: 26px; height: 32px; }
   .dropdown {
     left: auto;
     right: 0;
