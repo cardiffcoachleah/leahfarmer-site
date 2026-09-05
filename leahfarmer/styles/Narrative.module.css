@@ -3,7 +3,7 @@
    Eft.module.css. Left-justified throughout. */
 
 .main {
-  padding-top: 0;
+  padding-top: 110px;
   background: #00001A;
 }
 
@@ -342,6 +342,7 @@
 
 /* ── RESPONSIVE ─────────────────────────────── */
 @media (max-width: 900px) {
+  .main { padding-top: 90px; }
   .header { padding: 0.4rem 1rem; }
   .logoImg { height: 70px; }
   .pageHero, .section, .sectionLast, .footer {
