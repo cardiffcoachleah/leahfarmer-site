@@ -23,10 +23,13 @@
 
 .links {
   display: flex;
+  align-self: stretch;
+  align-items: stretch;
   gap: 2.5rem;
 }
 
-.links a {
+.plainLink,
+.menuButton {
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
@@ -37,11 +40,82 @@
   white-space: nowrap;
 }
 
-.links a:hover { color: #0EB2CD; }
+.plainLink {
+  display: flex;
+  align-items: center;
+}
+
+.plainLink:hover,
+.menuButton:hover { color: #0EB2CD; }
+
+.menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menuButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+.caret {
+  font-size: 0.7em;
+  line-height: 1;
+  transition: transform 0.2s;
+}
+
+.menuButton[aria-expanded="true"] { color: #0EB2CD; }
+.menuButton[aria-expanded="true"] .caret { transform: rotate(180deg); }
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: -1.25rem;
+  min-width: 250px;
+  display: none;
+  flex-direction: column;
+  background: #00001A;
+  border: 2px solid #067181;
+  border-radius: 2px;
+  padding: 0.5rem 0;
+}
+
+.dropdownOpen { display: flex; }
+
+.dropdown a {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 0.7rem 1.25rem;
+  transition: color 0.2s, background 0.2s;
+}
+
+.dropdown a:hover {
+  color: #0EB2CD;
+  background: rgba(14, 178, 205, 0.07);
+}
 
 @media (max-width: 768px) {
   .nav { padding: 0.4rem 1rem; }
   .logoImg { height: 70px; }
   .links { gap: 0.85rem; }
-  .links a { font-size: 0.8rem; }
+  .plainLink, .menuButton { font-size: 0.8rem; }
+  .menuButton { gap: 0.25rem; }
+  .dropdown {
+    left: auto;
+    right: 0;
+    min-width: 210px;
+  }
+  .dropdown a { font-size: 0.9rem; padding: 0.65rem 1rem; }
 }
