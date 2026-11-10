@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import styles from '../styles/Page.module.css'
@@ -58,41 +57,17 @@ export default function Coaching() {
 
         <section className={styles.section}>
           <div className={styles.sectionInner}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 240px', gap: '3rem', alignItems: 'center' }}>
-              <div>
-                <h2 className={styles.sectionTitleTeal}>How I work</h2>
-                <div className={styles.prose}>
-                  <p>
-                    Sessions are 60 minutes, online. Some clients come weekly when something&apos;s pressing. Some settle into every two weeks. Some book a block of sessions, work through what they need, then come back when the next thing surfaces. A few have been with me for years.
-                  </p>
-                  <p>
-                    I don&apos;t have a fixed programme I run everyone through. Most clients want to bring the problem and work on it together — and that&apos;s mostly what we do. If you need more structure, tools, frameworks, a Miro board and reading list, I can do that too.
-                  </p>
-                  <p>
-                    What I will do, regardless of where you are, is ask you questions you might not expect. Sometimes about what you&apos;re feeling. Sometimes about where you feel it. Not because I&apos;m a therapist — I&apos;m not — but because the body often knows something the spreadsheet doesn&apos;t. You don&apos;t have to be comfortable with that from day one. Most people aren&apos;t. It tends to become useful anyway.
-                  </p>
-                </div>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', borderLeft: '1px solid rgba(14, 178, 205, 0.2)', paddingLeft: '2rem' }}>
-                <Image
-                  src="/TPR Logo Round.png"
-                  alt="The Product Room"
-                  width={120}
-                  height={120}
-                  style={{ borderRadius: '50%', marginBottom: '1rem' }}
-                />
-                <p style={{ fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', lineHeight: '1.5', marginBottom: '1.25rem' }}>
-                  Looking for community?
-                </p>
-                <a
-                  href="https://www.skool.com/the-product-room-9295"
-                  target="_blank"
-                  rel="noopener"
-                  style={{ fontSize: '0.8rem', color: '#0EB2CD', textDecoration: 'none', borderBottom: '1px solid rgba(14, 178, 205, 0.4)', paddingBottom: '2px', letterSpacing: '0.02em' }}
-                >
-                  Check out The Product Room on Skool →
-                </a>
-              </div>
+            <h2 className={styles.sectionTitleTeal}>How I work</h2>
+            <div className={styles.prose}>
+              <p>
+                Sessions are 60 minutes, online. Some clients come weekly when something&apos;s pressing. Some settle into every two weeks. Some book a block of sessions, work through what they need, then come back when the next thing surfaces. A few have been with me for years.
+              </p>
+              <p>
+                I don&apos;t have a fixed programme I run everyone through. Most clients want to bring the problem and work on it together — and that&apos;s mostly what we do. If you need more structure, tools, frameworks, a Miro board and reading list, I can do that too.
+              </p>
+              <p>
+                What I will do, regardless of where you are, is ask you questions you might not expect. Sometimes about what you&apos;re feeling. Sometimes about where you feel it. Not because I&apos;m a therapist — I&apos;m not — but because the body often knows something the spreadsheet doesn&apos;t. You don&apos;t have to be comfortable with that from day one. Most people aren&apos;t. It tends to become useful anyway.
+              </p>
             </div>
           </div>
         </section>
