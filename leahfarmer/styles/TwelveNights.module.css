@@ -1,0 +1,351 @@
+.main {
+  padding-top: 110px;
+  background: var(--black);
+  color: var(--white);
+}
+
+/* HERO */
+.hero {
+  padding: 4.5rem 1.5rem 5rem;
+  background:
+    radial-gradient(circle at 80% 10%, rgba(14, 178, 205, 0.18), rgba(0, 0, 26, 0) 55%),
+    radial-gradient(circle at 10% 100%, rgba(106, 232, 164, 0.07), rgba(0, 0, 26, 0) 45%),
+    var(--black);
+  border-bottom: 2px solid var(--teal);
+}
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.tagline {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(1.3rem, 3vw, 1.75rem);
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+}
+
+.heroButton {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background: var(--teal);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+  transition: background 0.2s ease;
+}
+
+.heroButton:hover {
+  background: var(--teal-light);
+}
+
+/* SECTIONS */
+.section,
+.sectionLast {
+  padding: 4rem 1.5rem;
+  border-bottom: 1px solid var(--teal-deep);
+}
+
+.sectionLast {
+  border-bottom: none;
+  padding-bottom: 6rem;
+}
+
+.sectionInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.prose {
+  max-width: 720px;
+}
+
+.prose p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 1.25rem;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 2rem;
+}
+
+/* STEPS */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.step {
+  border: 2px solid var(--teal-deep);
+  border-radius: 2px;
+  padding: 1.5rem 1.25rem;
+}
+
+.stepHighlight {
+  border-color: var(--teal);
+  background: rgba(14, 178, 205, 0.07);
+}
+
+.stepNum {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--teal);
+  margin-bottom: 0.75rem;
+}
+
+.stepTitle {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.35rem;
+}
+
+.stepWhen {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  margin-bottom: 0.75rem;
+}
+
+.stepBody {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* FORM */
+.formCard {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 2px solid var(--teal);
+  border-radius: 2px;
+  padding: 2.5rem 2.25rem;
+  background: rgba(14, 178, 205, 0.05);
+}
+
+.formTitle {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.formIntro {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1.75rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.required {
+  color: var(--teal);
+}
+
+.field input {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--teal-deep);
+  border-radius: 2px;
+  padding: 0.8rem 0.9rem;
+  min-height: 48px;
+}
+
+.field input:focus {
+  outline: 2px solid var(--teal);
+  outline-offset: 1px;
+  border-color: var(--teal);
+}
+
+.permissions {
+  border: none;
+  padding: 0;
+  margin: 0.25rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.permissions legend {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.25rem;
+}
+
+.permNote {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.25rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 44px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.checkbox input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--teal);
+  flex-shrink: 0;
+}
+
+.honeypot {
+  position: absolute;
+  left: -5000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.submit {
+  margin-top: 0.5rem;
+  min-height: 52px;
+  padding: 0.9rem 2rem;
+  background: var(--teal);
+  color: var(--black);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit:hover:not(:disabled) {
+  background: var(--teal-light);
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.error {
+  font-size: 0.9rem;
+  color: #FFB4A8;
+}
+
+.legal {
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.legal a {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
+.success p {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 1rem;
+}
+
+.success a {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
+.signoff {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.6rem !important;
+  color: var(--teal) !important;
+  margin-top: 0.5rem;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  .section,
+  .sectionLast {
+    padding: 3rem 1.5rem;
+  }
+
+  .steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .formCard {
+    padding: 2rem 1.25rem;
+  }
+}
